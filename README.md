@@ -2,6 +2,8 @@
 
 The datasets are collected with multiple dishes located in the following regions.
 
+## Dish Locations
+
 | ID                |  Location              | Dish Generation     | Point-of-Presence | Service Tier     |
 | ----------------- | ---------------------- | ------------------- | ----------------- | ---------------- |
 | victoria_active_1 |  Victoria, BC, Canada  | rev3_proto2         | Seattle           | Standard         |
@@ -18,6 +20,21 @@ The datasets are collected with multiple dishes located in the following regions
 | louvain           |  Louvain, Belgium      | rev3_proto2         | Frankfurt         | Standard         |
 | seychelles        |  Seychelles            | rev3_proto2         | Lagos, Frankfurt  | Mobile, Roaming  |
 
+## Dish Obstruction Maps
+
+| **victoria_active_1**                | **victoria_active_2**                | **victoria_inactive**                |
+| ------------------------------------ | ------------------------------------ | ------------------------------------ | 
+| ![](./figures/victoria_active_1.png) | ![](./figures/victoria_active_2.png) | ![](./figures/victoria_inactive.png) |
+| **vancouver**                        | **seattle**                          | **seattle_hp**                       |
+| ![](./figures/vancouver.png)         | ![](./figures/seattle.png)           | ![](./figures/seattle_hp.png)        |
+| **alaska**                           | **ottawa**                           | **iowa**                             |
+| ![](./figures/alaska.png)            | ![](./figures/ottawa.png)            | ![](./figures/iowa.png)              |
+| **denver**                           | **dallas**                           | **louvain**                          |                                   
+| ![](./figures/denver.png)            | ![](./figures/dallas.png)            | ![](./figures/louvain.png)           |
+| **seychelles**                       |                                      |                                      |
+| ![](./figures/seychelles.png)        |                                      |                                      |
+  
+## Dataset
 
 The dataset is split into monthly snapshots. Each can be retrieved from Zenodo using the links below.
 
