@@ -1,6 +1,8 @@
 # LENS: A LEO Satellite Network Measurement Dataset
 
-The datasets are collected with multiple dishes located in the following regions.
+This repository contains the dataset for the submission ***LENS: A LEO Satellite Network Measurement Dataset*** to ACM MMSys'24 Open-source Software and Dataset track.
+
+For ***inside-out*** measurements, the datasets are collected with multiple dishes located in the following regions.
 
 ## Dish Locations
 
@@ -40,6 +42,6 @@ The dataset is split into monthly snapshots. Each can be retrieved from Zenodo u
 
 | Monthly Snapshots | Type | Link                                           | Compressed Size | Uncompressed Size |
 |-------------------|------|------------------------------------------------|-----------------|-------------------|
-| 2024-01           | RAW  | [Zenodo](https://zenodo.org/records/10445958) |                 | 2.1TB             |
-| 2023-12           | RAW  | [Zenodo](https://zenodo.org/records/10608436) |                 | 1.6TB             |
-| 2023-11           | RAW  | [Zenodo](https://zenodo.org/records/10608442) |                 | 854GB             |
+| 2024-01           | RAW  | [Zenodo](https://zenodo.org/records/10445958)  |                 | 2.1TB             |
+| 2023-12           | RAW  | [Zenodo](https://zenodo.org/records/10608436)  |                 | 1.6TB             |
+| 2023-11           | RAW  | [Zenodo](https://zenodo.org/records/10608442)  |                 | 854GB             |
