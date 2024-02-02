@@ -38,6 +38,8 @@ The datasets are collected with multiple dishes located in the following regions
 
 The dataset is split into monthly snapshots. Each can be retrieved from Zenodo using the links below.
 
-+ [2024-01]()
-+ [2023-12]()
-+ [2023-11]()
+| Monthly Snapshots | Type | Link                                           | Compressed Size | Uncompressed Size |
+|-------------------|------|------------------------------------------------|-----------------|-------------------|
+| 2024-01           | RAW  | [Zenodo](https://zenodo.org/records/10445958) |                 | 2.1TB             |
+| 2023-12           | RAW  | [Zenodo](https://zenodo.org/records/10608436) |                 | 1.6TB             |
+| 2023-11           | RAW  | [Zenodo](https://zenodo.org/records/10608442) |                 | 854GB             |
