@@ -50,14 +50,16 @@ The dataset is split into monthly snapshots. Each can be retrieved from Zenodo u
 
 Due to the file size limit on Zenodo, monthly snapshots are created in splitted tar archives using the following command.
 
+e.g.,
 ```bash
-tar --zstd -cvf - 2024-01 | split --bytes=45GB - 2024-01.tar.zst.
+tar -I "zstd -T24 -8" -cvf - LENS-2024-01 | split --bytes=40GB - LENS-2024-01.tar.zst.
 ```
 
 To decompress, make sure [Zstd](https://github.com/facebook/zstd) is installed. Download all the splitted tar archives in the same folder, and decompress using the following command. Make sure you have enough disk space. 
 
+e.g.,
 ```bash
-cat 2024-01.tar.zst.* | tar --zstd -xf -
+cat LENS-2024-01.tar.zst.* | tar --zstd -xf -
 ```
 
-We plan to released processed snapshots with latency metrics only in `.csv` format and InfluxDB database dumps in the future.
+We plan to release pre-processed snapshots with latency metrics only in `.csv` format and InfluxDB database dumps in the future.
