@@ -40,8 +40,24 @@ For ***inside-out*** measurements, the datasets are collected with multiple dish
 
 The dataset is split into monthly snapshots. Each can be retrieved from Zenodo using the links below.
 
-| Monthly Snapshots | Type | Link                                           | Compressed Size | Uncompressed Size |
-|-------------------|------|------------------------------------------------|-----------------|-------------------|
-| 2024-01           | RAW  | [Zenodo](https://zenodo.org/records/10445958)  |                 | 2.1TB             |
-| 2023-12           | RAW  | [Zenodo](https://zenodo.org/records/10608436)  |                 | 1.6TB             |
-| 2023-11           | RAW  | [Zenodo](https://zenodo.org/records/10608442)  |                 | 854GB             |
+| Monthly Snapshots | Type | Link                                                                                     | Compressed Size | Decompressed Size |
+|-------------------|------|------------------------------------------------------------------------------------------|-----------------|-------------------|
+| 2024-01           | RAW  | [Part1](https://zenodo.org/records/10445958), [Part2](), [Part3](), [Part4](), [Part5]() |                 | 2.1TB             |
+| 2023-12           | RAW  | [Zenodo](https://zenodo.org/records/10608436)                                            |                 | 1.6TB             |
+| 2023-11           | RAW  | [Zenodo](https://zenodo.org/records/10608442)                                            |                 | 854GB             |
+
+### Decompress Guide
+
+Due to the file size limit on Zenodo, monthly snapshots are created in splitted tar archives using the following command.
+
+```bash
+tar --zstd -cvf - 2024-01 | split --bytes=45GB - 2024-01.tar.zst.
+```
+
+To decompress, make sure [Zstd](https://github.com/facebook/zstd) is installed. Download all the splitted tar archives in the same folder, and decompress using the following command. Make sure you have enough disk space. 
+
+```bash
+cat 2024-01.tar.zst.* | tar --zstd -xf -
+```
+
+We plan to released processed snapshots with latency metrics only in `.csv` format and InfluxDB database dumps in the future.
