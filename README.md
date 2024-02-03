@@ -42,9 +42,9 @@ The dataset is split into monthly snapshots. Each can be retrieved from Zenodo u
 
 | Monthly Snapshots | Type | Link                                                                                     | Compressed Size | Decompressed Size |
 |-------------------|------|------------------------------------------------------------------------------------------|-----------------|-------------------|
-| 2024-01           | RAW  | [Part1](https://zenodo.org/records/10445958), [Part2](), [Part3](), [Part4](), [Part5]() |                 | 2.1TB             |
-| 2023-12           | RAW  | [Zenodo](https://zenodo.org/records/10608436)                                            |                 | 1.6TB             |
-| 2023-11           | RAW  | [Zenodo](https://zenodo.org/records/10608442)                                            |                 | 854GB             |
+| 2024-01           | RAW  | [Part1: LENS-2024-01.tar.zst.aa](https://zenodo.org/records/10445958)<br>[Part2: LENS-2024-01.tar.zst.ab](https://zenodo.org/records/10612421)<br>[Part3: LENS-2024-01.tar.zst.ac]()<br>[Part4: LENS-2024-01.tar.zst.ad]()<br>[Part5: LENS-2024-01.tar.zst.ae]() | 174GB | 2.1TB |
+| 2023-12           | RAW  |                                             |                 | 1.6TB             |
+| 2023-11           | RAW  |                                             |                 | 854GB             |
 
 ### Decompress Guide
 
@@ -55,7 +55,7 @@ e.g.,
 tar -I "zstd -T24 -8" -cvf - LENS-2024-01 | split --bytes=40GB - LENS-2024-01.tar.zst.
 ```
 
-To decompress, make sure [Zstd](https://github.com/facebook/zstd) is installed. Download all the splitted tar archives in the same folder, and decompress using the following command. Make sure you have enough disk space. 
+To decompress, make sure [Zstd](https://github.com/facebook/zstd) is installed. Download all the splitted tar archives for the same month in the same folder, and decompress using the following command. Make sure you have enough disk space. 
 
 e.g.,
 ```bash
