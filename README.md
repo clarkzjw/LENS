@@ -13,7 +13,7 @@ For ***inside-out*** measurements, the datasets are collected with multiple dish
 | victoria_inactive |  Victoria, BC, Canada  | rev3_proto2         | Seattle           | Inactive Mobile, Roam |
 | vancouver         |  Vancouver, BC, Canada | rev2_proto3         | Seattle           | Standard              |
 | seattle           |  Seattle, WA, USA      | rev3_proto2         | Seattle           | Standard              |
-| seattle_hp        |  Seattle, WA, USA      | hp1_proto1          | Seattle           | High Performance      |
+| seattle_hp        |  Seattle, WA, USA      | hp1_proto1          | Seattle           | Priority              |
 | alaska            |  Anchorage, AK, USA    | rev3_proto2         | Seattle           | Mobile                |
 | ottawa            |  Ottawa, ON, Canada    | rev3_proto2         | New York          | Standard              |
 | iowa              |  Iowa City, IA, USA    | rev1_pre_production | Chicago           | Standard              |
@@ -42,7 +42,7 @@ The dataset is split into monthly snapshots. Each can be retrieved from Zenodo u
 
 | Monthly Snapshots | Type | Link                                                                                     | Compressed Size | Decompressed Size |
 |-------------------|------|------------------------------------------------------------------------------------------|-----------------|-------------------|
-| 2024-01           | RAW  | [Part1: LENS-2024-01.tar.zst.aa](https://zenodo.org/records/10445958)<br>[Part2: LENS-2024-01.tar.zst.ab](https://zenodo.org/records/10612421)<br>[Part3: LENS-2024-01.tar.zst.ac]()<br>[Part4: LENS-2024-01.tar.zst.ad]()<br>[Part5: LENS-2024-01.tar.zst.ae]() | 174GB | 2.1TB |
+| 2024-01           | RAW  | [Part1: LENS-2024-01.tar.zst.aa](https://zenodo.org/records/10445958)<br>[Part2: LENS-2024-01.tar.zst.ab](https://zenodo.org/records/10612421)<br>[Part3: LENS-2024-01.tar.zst.ac](https://zenodo.org/records/10612606)<br>[Part4: LENS-2024-01.tar.zst.ad](https://zenodo.org/records/10612616)<br>[Part5: LENS-2024-01.tar.zst.ae](https://zenodo.org/records/10612618) | 174GB | 2.1TB |
 | 2023-12           | RAW  |                                             |                 | 1.6TB             |
 | 2023-11           | RAW  |                                             |                 | 854GB             |
 
