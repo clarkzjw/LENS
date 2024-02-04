@@ -43,8 +43,8 @@ The dataset is split into monthly snapshots. Each can be retrieved from Zenodo u
 | Monthly Snapshots | Type | Link                                                                                     | Compressed Size | Decompressed Size |
 |-------------------|------|------------------------------------------------------------------------------------------|-----------------|-------------------|
 | 2024-01           | RAW  | [Part1: LENS-2024-01.tar.zst.aa](https://zenodo.org/records/10445958)<br>[Part2: LENS-2024-01.tar.zst.ab](https://zenodo.org/records/10612421)<br>[Part3: LENS-2024-01.tar.zst.ac](https://zenodo.org/records/10612606)<br>[Part4: LENS-2024-01.tar.zst.ad](https://zenodo.org/records/10612616)<br>[Part5: LENS-2024-01.tar.zst.ae](https://zenodo.org/records/10612618) | 174GB | 2.1TB |
-| 2023-12           | RAW  |                                             |                 | 1.6TB             |
-| 2023-11           | RAW  |                                             |                 | 854GB             |
+| 2023-12           | RAW  | [Part1: LENS-2023-12.tar.zst.aa](https://zenodo.org/records/10608436)<br>[Part2: LENS-2023-12.tar.zst.ab](https://zenodo.org/records/10614217)<br>[Part3: LENS-2023-12.tar.zst.ac](https://zenodo.org/records/10614332)<br>[Part4: LENS-2023-12.tar.zst.ad](https://zenodo.org/records/10614389)                 | 135GB | 1.6TB             |
+| 2023-11           | RAW  | [Part1: LENS-2023-11.tar.zst.aa](https://zenodo.org/records/10608442)<br>[Part2: LENS-2023-11.tar.zst.ab](https://zenodo.org/records/10614491) | 72GB | 854GB             |
 
 ### Decompress Guide
 
