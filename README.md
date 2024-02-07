@@ -509,3 +509,9 @@ timestamp,rtt
 1705744800.677437,106.0
   ```
 </details>
+
+## LICENSE
+
+This repository is licensed under [GPL-3.0](./LICENSE).
+
+The dataset files on Zenodo are released under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
