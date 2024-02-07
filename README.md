@@ -2,6 +2,19 @@
 
 This repository contains the dataset for the submission ***LENS: A LEO Satellite Network Measurement Dataset*** to ACM MMSys'24 Open-source Software and Dataset track.
 
+Table of Contents
+=================
+
+* [Dish Locations](#dish-locations)
+* [Dish Obstruction Maps](#dish-obstruction-maps)
+* [Monthly Snapshots](#monthly-snapshots)
+   * [Decompress Guide](#decompress-guide)
+   * [RAW dataset](#raw-dataset)
+   * [Processed CSV dataset](#processed-csv-dataset)
+      * [IRTT](#irtt)
+      * [Ping](#ping)
+* [LICENSE](#license)
+
 For ***inside-out*** measurements, the datasets are collected with multiple dishes located in the following regions.
 
 ## Dish Locations
@@ -36,7 +49,7 @@ For ***inside-out*** measurements, the datasets are collected with multiple dish
 | **seychelles**                       |                                      |                                      |
 | ![](./figures/seychelles.png)        |                                      |                                      |
   
-## Dataset
+## Monthly Snapshots
 
 The dataset is split into monthly snapshots. Each can be retrieved from Zenodo using the links below.
 
