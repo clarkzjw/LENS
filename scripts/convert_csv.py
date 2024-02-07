@@ -1,4 +1,5 @@
 import os
+import sys
 import csv
 import time
 from pathlib import Path
@@ -11,11 +12,14 @@ raw_dir = ""
 
 
 def convert_irtt_csv(file_path: str) -> None:
+    print(file_path)
     outfile_path = Path(str(file_path).replace(raw_dir, csv_dir))
     if os.path.isfile(outfile_path.with_suffix(".csv")):
         return
-    print(file_path)
     v_irtt = load_irtt(file_path)
+    if v_irtt == None:
+        print("error: ", file_path)
+        sys.exit(1)
     with open(outfile_path.with_suffix(".csv"), 'w', newline='') as outcsv:
         writer = csv.DictWriter(outcsv, fieldnames = ["timestamp", "rtt", "uplink", "downlink"])
         writer.writeheader()
@@ -24,11 +28,14 @@ def convert_irtt_csv(file_path: str) -> None:
 
 
 def convert_ping_csv(file_path: str) -> None:
+    print(file_path)
     outfile_path = Path(str(file_path).replace(raw_dir, csv_dir))
     if os.path.isfile(outfile_path.with_suffix(".csv")):
         return
-    print(file_path)
     v_ping = load_ping(file_path)
+    if v_ping == None:
+        print("error: ", file_path)
+        sys.exit(1)
     with open(outfile_path.with_suffix(".csv"), 'w', newline='') as outcsv:
         writer = csv.DictWriter(outcsv, fieldnames = ["timestamp", "rtt"])
         writer.writeheader()
