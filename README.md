@@ -19,21 +19,32 @@ For ***inside-out*** measurements, the datasets are collected with multiple dish
 
 ## Dish Locations
 
-| ID                |  Location              | Dish Generation     | Point-of-Presence | Service Tier          |
-| ----------------- | ---------------------- | ------------------- | ----------------- | --------------------- |
-| victoria_active_1 |  Victoria, BC, Canada  | rev3_proto2         | Seattle           | Standard              |
-| victoria_active_2 |  Victoria, BC, Canada  | rev3_proto2         | Seattle           | Mobile                |
-| victoria_inactive |  Victoria, BC, Canada  | rev3_proto2         | Seattle           | Inactive Mobile, Roam |
-| vancouver         |  Vancouver, BC, Canada | rev2_proto3         | Seattle           | Standard              |
-| seattle           |  Seattle, WA, USA      | rev3_proto2         | Seattle           | Standard              |
-| seattle_hp        |  Seattle, WA, USA      | hp1_proto1          | Seattle           | Priority              |
-| alaska            |  Anchorage, AK, USA    | rev3_proto2         | Seattle           | Mobile                |
-| ottawa            |  Ottawa, ON, Canada    | rev3_proto2         | New York          | Standard              |
-| iowa              |  Iowa City, IA, USA    | rev1_pre_production | Chicago           | Standard              |
-| denver            |  Denver, CO, USA       | rev3_proto2         | Denver            | Mobile, Roam          |
-| dallas            |  Oxford, MS, USA       | rev3_proto2         | Dallas            | Inactive Standard     |
-| louvain           |  Louvain, Belgium      | rev3_proto2         | Frankfurt         | Standard              |
-| seychelles        |  Seychelles            | rev3_proto2         | Lagos / Frankfurt | Mobile, Roam          |
+| ID                |  Location              | Dish Generation     | Point-of-Presence     | Service Tier          |
+| ----------------- | ---------------------- | ------------------- | --------------------- | --------------------- |
+| victoria_active_1 |  Victoria, BC, Canada  | rev3_proto2         | Seattle               | Standard              |
+| victoria_active_2 |  Victoria, BC, Canada  | rev3_proto2         | Seattle               | Mobile                |
+| victoria_inactive |  Victoria, BC, Canada  | rev3_proto2         | Seattle               | Inactive Mobile, Roam |
+| vancouver         |  Vancouver, BC, Canada | rev2_proto3         | Seattle               | Standard [1]          |
+| seattle           |  Seattle, WA, USA      | rev3_proto2         | Seattle               | Standard              |
+| seattle_hp        |  Seattle, WA, USA      | hp1_proto1          | Seattle               | Priority              |
+| alaska            |  Anchorage, AK, USA    | rev3_proto2         | Seattle               | Mobile                |
+| ottawa            |  Ottawa, ON, Canada    | rev3_proto2         | New York              | Standard              |
+| iowa              |  Iowa City, IA, USA    | rev1_pre_production | Chicago               | Standard              |
+| denver            |  Denver, CO, USA       | rev3_proto2         | Denver                | Mobile, Roam          |
+| dallas            |  Oxford, MS, USA       | rev3_proto2         | Dallas                | Inactive Standard     |
+| louvain           |  Louvain, Belgium      | rev3_proto2         | Frankfurt             | Standard              |
+| seychelles        |  Seychelles            | rev3_proto2         | Lagos / Frankfurt [2] | Mobile, Roam          |
+
+Ref:
+
+![Starlink dish generations](./figures/dish.jpg)
+
+> Source: [https://twitter.com/olegkutkov/status/1742322178320670753/](https://twitter.com/olegkutkov/status/1742322178320670753/)
+
+**Note**:
+
+1. The subscription plan associated with the *vancouver* dish was paused between 2023/12/29 and 2024/01/09, during which ***inactive*** measurements was conducted.
+2. The PoP associated with the *seychelles* dish was changed from Lagos to Frankfurt on 2023/12/08.
 
 ## Dish Obstruction Maps
 
