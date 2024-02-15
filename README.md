@@ -2,25 +2,49 @@
 
 This repository contains the dataset for the submission ***LENS: A LEO Satellite Network Measurement Dataset*** to ACM MMSys'24 Open-source Software and Dataset track.
 
+Table of Contents
+=================
+
+* [Dish Locations](#dish-locations)
+* [Dish Obstruction Maps](#dish-obstruction-maps)
+* [Monthly Snapshots](#monthly-snapshots)
+   * [Decompress Guide](#decompress-guide)
+   * [RAW dataset](#raw-dataset)
+   * [Processed CSV dataset](#processed-csv-dataset)
+      * [IRTT](#irtt)
+      * [Ping](#ping)
+* [LICENSE](#license)
+
 For ***inside-out*** measurements, the datasets are collected with multiple dishes located in the following regions.
 
 ## Dish Locations
 
-| ID                |  Location              | Dish Generation     | Point-of-Presence | Service Tier          |
-| ----------------- | ---------------------- | ------------------- | ----------------- | --------------------- |
-| victoria_active_1 |  Victoria, BC, Canada  | rev3_proto2         | Seattle           | Standard              |
-| victoria_active_2 |  Victoria, BC, Canada  | rev3_proto2         | Seattle           | Mobile                |
-| victoria_inactive |  Victoria, BC, Canada  | rev3_proto2         | Seattle           | Inactive Mobile, Roam |
-| vancouver         |  Vancouver, BC, Canada | rev2_proto3         | Seattle           | Standard              |
-| seattle           |  Seattle, WA, USA      | rev3_proto2         | Seattle           | Standard              |
-| seattle_hp        |  Seattle, WA, USA      | hp1_proto1          | Seattle           | Priority              |
-| alaska            |  Anchorage, AK, USA    | rev3_proto2         | Seattle           | Mobile                |
-| ottawa            |  Ottawa, ON, Canada    | rev3_proto2         | New York          | Standard              |
-| iowa              |  Iowa City, IA, USA    | rev1_pre_production | Chicago           | Standard              |
-| denver            |  Denver, CO, USA       | rev3_proto2         | Denver            | Mobile, Roam          |
-| dallas            |  Oxford, MS, USA       | rev3_proto2         | Dallas            | Inactive Standard     |
-| louvain           |  Louvain, Belgium      | rev3_proto2         | Frankfurt         | Standard              |
-| seychelles        |  Seychelles            | rev3_proto2         | Lagos / Frankfurt | Mobile, Roam          |
+| ID                |  Location              | Dish Generation     | Point-of-Presence     | Service Tier          |
+| ----------------- | ---------------------- | ------------------- | --------------------- | --------------------- |
+| victoria_active_1 |  Victoria, BC, Canada  | rev3_proto2         | Seattle               | Standard              |
+| victoria_active_2 |  Victoria, BC, Canada  | rev3_proto2         | Seattle               | Mobile                |
+| victoria_inactive |  Victoria, BC, Canada  | rev3_proto2         | Seattle               | Inactive Mobile, Roam |
+| vancouver         |  Vancouver, BC, Canada | rev2_proto3         | Seattle               | Standard [1]          |
+| seattle           |  Seattle, WA, USA      | rev3_proto2         | Seattle               | Standard              |
+| seattle_hp        |  Seattle, WA, USA      | hp1_proto1          | Seattle               | Priority              |
+| alaska            |  Anchorage, AK, USA    | rev3_proto2         | Seattle               | Mobile                |
+| ottawa            |  Ottawa, ON, Canada    | rev3_proto2         | New York              | Standard              |
+| iowa              |  Iowa City, IA, USA    | rev1_pre_production | Chicago               | Standard              |
+| denver            |  Denver, CO, USA       | rev3_proto2         | Denver                | Mobile, Roam          |
+| dallas            |  Oxford, MS, USA       | rev3_proto2         | Dallas                | Inactive Standard     |
+| louvain           |  Louvain, Belgium      | rev3_proto2         | Frankfurt             | Standard              |
+| seychelles        |  Seychelles            | rev3_proto2         | Lagos / Frankfurt [2] | Mobile, Roam          |
+
+Ref:
+
+![Starlink dish generations](./figures/dish.jpg)
+
+> Source: [https://twitter.com/olegkutkov/status/1742322178320670753/](https://twitter.com/olegkutkov/status/1742322178320670753/)
+
+**Note**:
+
+1. The subscription plan associated with the *vancouver* dish was paused between 2023/12/29 and 2024/01/09, during which ***inactive*** measurements was conducted.
+2. The PoP associated with the *seychelles* dish was changed from Lagos to Frankfurt on 2023/12/08.
 
 ## Dish Obstruction Maps
 
@@ -36,7 +60,7 @@ For ***inside-out*** measurements, the datasets are collected with multiple dish
 | **seychelles**                       |                                      |                                      |
 | ![](./figures/seychelles.png)        |                                      |                                      |
   
-## Dataset
+## Monthly Snapshots
 
 The dataset is split into monthly snapshots. Each can be retrieved from Zenodo using the links below.
 
@@ -508,4 +532,11 @@ timestamp,rtt
 1705744800.613665,88.3
 1705744800.677437,106.0
   ```
+
 </details>
+
+## LICENSE
+
+This repository is licensed under [GPL-3.0](./LICENSE).
+
+The dataset files on Zenodo are released under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
