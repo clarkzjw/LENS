@@ -1,6 +1,8 @@
 # LENS: A LEO Satellite Network Measurement Dataset
 
-This repository contains the dataset for the submission ***LENS: A LEO Satellite Network Measurement Dataset*** to ACM MMSys'24 Open-source Software and Dataset track.
+This repository contains the dataset for the paper ***LENS: A LEO Satellite Network Measurement Dataset*** published in ACM MMSys'24 Open-source Software and Dataset (ODS) track.
+
+[![](https://img.shields.io/badge/MMSys'24ODS-Paper-blue)](https://dl.acm.org/doi/10.1145/3625468.3652170)
 
 Table of Contents
 =================
