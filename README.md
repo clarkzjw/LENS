@@ -15,6 +15,7 @@ Table of Contents
 
 * [Dish Locations](#dish-locations)
 * [Dish Obstruction Maps](#dish-obstruction-maps)
+* [OneWeb](#oneweb)
 * [Monthly Snapshots](#monthly-snapshots)
    * [Decompress Guide](#decompress-guide)
    * [RAW dataset](#raw-dataset)
@@ -72,9 +73,13 @@ Ref:
 | ![](./figures/alaska.png)            | ![](./figures/ottawa.png)            | ![](./figures/iowa.png)              |
 | **denver**                           | **dallas**                           | **louvain**                          |                                   
 | ![](./figures/denver.png)            | ![](./figures/dallas.png)            | ![](./figures/louvain.png)           |
-| **seychelles**                       |                                      |                                      |
-| ![](./figures/seychelles.png)        |                                      |                                      |
+| **seychelles**                       | **kanazawa**                         |                                      |
+| ![](./figures/seychelles.png)        | ![](./figures/kanazawa.png)          |                                      |
   
+## OneWeb
+
+We collected a few OneWeb traces from dishes located in Alaska, US. See [OneWeb](./oneweb/README.md) for more details.
+
 ## Monthly Snapshots
 
 The dataset is split into monthly snapshots. Each can be retrieved from Zenodo using the links below.
