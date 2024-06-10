@@ -2,7 +2,9 @@
 
 This repository contains the dataset for the paper ***LENS: A LEO Satellite Network Measurement Dataset*** published in ACM MMSys'24 Open-source Software and Dataset (ODS) track.
 
-[![](https://img.shields.io/badge/MMSys'24ODS-Paper-blue)](https://dl.acm.org/doi/10.1145/3625468.3652170)
+[![](https://img.shields.io/badge/MMSys'24ODS-Paper-blue)](https://dl.acm.org/doi/10.1145/3625468.3652170) [![](https://img.shields.io/badge/MMSys'24ODS-Poster-blue)](https://pan.uvic.ca/~clarkzjw/static/LENS-MMSys24-Poster.pdf) [![](https://img.shields.io/badge/MMSys'24-Paper-green)](https://github.com/clarkzjw/mmsys24-starlink-livestreaming)
+
+The original dataset snapshot for the published paper can be found at commit [c084c11](https://github.com/clarkzjw/LENS/tree/c084c1121a64470d4b14f9e060eb79ffbfe4e059).
 
 Table of Contents
 =================
@@ -15,27 +17,29 @@ Table of Contents
    * [Processed CSV dataset](#processed-csv-dataset)
       * [IRTT](#irtt)
       * [Ping](#ping)
-* [LICENSE](#license)
+* [License](#license)
+* [Acknowledgment](#acknowledgment)
 
 For ***inside-out*** measurements, the datasets are collected with multiple dishes located in the following regions.
 
 ## Dish Locations
 
-| ID                |  Location              | Dish Generation     | Point-of-Presence     | Service Tier          |
-| ----------------- | ---------------------- | ------------------- | --------------------- | --------------------- |
-| victoria_active_1 |  Victoria, BC, Canada  | rev3_proto2         | Seattle               | Standard              |
-| victoria_active_2 |  Victoria, BC, Canada  | rev3_proto2         | Seattle               | Mobile                |
-| victoria_inactive |  Victoria, BC, Canada  | rev3_proto2         | Seattle               | Inactive Mobile, Roam |
-| vancouver         |  Vancouver, BC, Canada | rev2_proto3         | Seattle               | Standard [1]          |
-| seattle           |  Seattle, WA, USA      | rev3_proto2         | Seattle               | Standard              |
-| seattle_hp        |  Seattle, WA, USA      | hp1_proto1          | Seattle               | Priority              |
-| alaska            |  Anchorage, AK, USA    | rev3_proto2         | Seattle               | Mobile                |
-| ottawa            |  Ottawa, ON, Canada    | rev3_proto2         | New York              | Standard              |
-| iowa              |  Iowa City, IA, USA    | rev1_pre_production | Chicago               | Standard              |
-| denver            |  Denver, CO, USA       | rev3_proto2         | Denver                | Mobile, Roam          |
-| dallas            |  Oxford, MS, USA       | rev3_proto2         | Dallas                | Inactive Standard     |
-| louvain           |  Louvain, Belgium      | rev3_proto2         | Frankfurt             | Standard              |
-| seychelles        |  Seychelles            | rev3_proto2         | Lagos / Frankfurt [2] | Mobile, Roam          |
+| ID                |  Location              | Dish Generation     | Point-of-Presence      | Service Tier          |
+| ----------------- | ---------------------- | ------------------- | ---------------------- | --------------------- |
+| victoria_active_1 |  Victoria, BC, Canada  | rev3_proto2         | Seattle                | Standard              |
+| victoria_active_2 |  Victoria, BC, Canada  | rev3_proto2         | Seattle                | Mobile                |
+| victoria_inactive |  Victoria, BC, Canada  | rev3_proto2         | Seattle                | Inactive Mobile, Roam |
+| vancouver         |  Vancouver, BC, Canada | rev2_proto3         | Seattle                | Standard [1]          |
+| seattle           |  Seattle, WA, USA      | rev3_proto2         | Seattle                | Standard              |
+| seattle_hp        |  Seattle, WA, USA      | hp1_proto1          | Seattle                | Priority              |
+| alaska            |  Anchorage, AK, USA    | rev3_proto2         | Seattle                | Mobile                |
+| calgary           |  Calgary, AB, Canada   | rev3_proto2         | Seattle                | Inactive Standard     |
+| ottawa            |  Ottawa, ON, Canada    | rev3_proto2         | New York               | Standard [5]          |
+| iowa              |  Iowa City, IA, USA    | rev1_pre_production | Chicago                | Standard              |
+| denver            |  Denver, CO, USA       | rev3_proto2         | Denver                 | Mobile, Roam [6]      |
+| dallas            |  Oxford, MS, USA       | rev3_proto2         | Dallas                 | Inactive Standard     |
+| louvain           |  Louvain, Belgium      | rev3_proto2         | Frankfurt / London [4] | Standard              |
+| seychelles [3]    |  Seychelles            | rev3_proto2         | Lagos / Frankfurt [2]  | Mobile, Roam          |
 
 Ref:
 
@@ -47,6 +51,10 @@ Ref:
 
 1. The subscription plan associated with the *vancouver* dish was paused between 2023/12/29 and 2024/01/09, during which ***inactive*** measurements was conducted.
 2. The PoP associated with the *seychelles* dish was changed from Lagos to Frankfurt on 2023/12/08.
+3. The Starlink subscription at this installation has been canceled since March 2024, see [202403](./files/202403/README.md#seychelles) for more details.
+4. The PoP associated with the *louvain* dish was changed from Frankfurt to London.
+5. The Starlink subscription at this installation has been paused since March 2024, see [202403](./files/202403/README.md#ottawa) for more details.
+6. The Starlink subscription at this installation has been paused since March 2024, see [202403](./files/202403/README.md#denver) for more details.
 
 ## Dish Obstruction Maps
 
@@ -68,6 +76,14 @@ The dataset is split into monthly snapshots. Each can be retrieved from Zenodo u
 
 | Monthly Snapshots | Type | Link                                                                                     | Compressed Size | Decompressed Size |
 |-------------------|------|------------------------------------------------------------------------------------------|-----------------|-------------------|
+| 2024-05           | RAW  | [Part1: LENS-2024-05.tar.zst.aa](https://zenodo.org/records/11537639)<br>[Part2: LENS-2024-05.tar.zst.ab](https://zenodo.org/records/11538900)<br>[Part3: LENS-2024-05.tar.zst.ac](https://zenodo.org/records/11540281)  | 99GB | 1.2TB |
+| 2024-05           | CSV  | TBA | | |
+| 2024-04           | RAW  | [Part1: LENS-2024-04.tar.zst.aa](https://zenodo.org/records/11540826)<br>[Part2: LENS-2024-04.tar.zst.ab](https://zenodo.org/records/11541705)<br>[Part3: LENS-2024-04.tar.zst.ac](https://zenodo.org/records/11542711)<br>[Part4: LENS-2024-04.tar.zst.ad](https://zenodo.org/records/11543385) | 119GB | 1.4TB |
+| 2024-04           | CSV  | TBA | | |
+| 2024-03           | RAW  | TBA | | |
+| 2024-03           | CSV  | TBA | | |
+| 2024-02           | RAW  | TBA | | |
+| 2024-02           | CSV  | TBA | | |
 | 2024-01           | RAW  | [Part1: LENS-2024-01.tar.zst.aa](https://zenodo.org/records/10445958)<br>[Part2: LENS-2024-01.tar.zst.ab](https://zenodo.org/records/10612421)<br>[Part3: LENS-2024-01.tar.zst.ac](https://zenodo.org/records/10612606)<br>[Part4: LENS-2024-01.tar.zst.ad](https://zenodo.org/records/10612616)<br>[Part5: LENS-2024-01.tar.zst.ae](https://zenodo.org/records/10612618) | 174GB | 2.1TB |
 | 2024-01           | CSV  | [Part1: LENS-2024-01-CSV.tar.zst.aa](https://zenodo.org/records/10663130)<br>[Part2: LENS-2024-01-CSV.tar.zst.ab](https://zenodo.org/records/10663146)   | 50GB | 161GB  |
 | 2023-12           | RAW  | [Part1: LENS-2023-12.tar.zst.aa](https://zenodo.org/records/10608436)<br>[Part2: LENS-2023-12.tar.zst.ab](https://zenodo.org/records/10614217)<br>[Part3: LENS-2023-12.tar.zst.ac](https://zenodo.org/records/10614332)<br>[Part4: LENS-2023-12.tar.zst.ad](https://zenodo.org/records/10614389) | 135GB | 1.6TB |
@@ -537,8 +553,12 @@ timestamp,rtt
 
 </details>
 
-## LICENSE
+## License
 
 This repository is licensed under [GPL-3.0](./LICENSE).
 
 The dataset files on Zenodo are released under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+
+## Acknowledgment
+
+This work is not possible without our alumni and their students who hosted our Starlink dishes, and other Starlink users who allowed us to access their dishes remotely.
