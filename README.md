@@ -2,21 +2,23 @@
 
 This repository contains the dataset for the paper ***LENS: A LEO Satellite Network Measurement Dataset*** published in ACM MMSys'24 Open-source Software and Dataset (ODS) track.
 
-[![](https://img.shields.io/badge/MMSys'24ODS-Paper-blue)](https://dl.acm.org/doi/10.1145/3625468.3652170)
+[![](https://img.shields.io/badge/MMSys'24ODS-Paper-blue)](https://dl.acm.org/doi/10.1145/3625468.3652170) [![](https://img.shields.io/badge/MMSys'24ODS-Poster-blue)](https://pan.uvic.ca/~clarkzjw/static/LENS-MMSys24-Poster.pdf) [![](https://img.shields.io/badge/MMSys'24-Paper-green)](https://github.com/clarkzjw/mmsys24-starlink-livestreaming)
+
+The original dataset snapshot for the published paper can be found at commit [c084c11](https://github.com/clarkzjw/LENS/tree/c084c1121a64470d4b14f9e060eb79ffbfe4e059).
 
 Table of Contents
 =================
 
 * [Dish Locations](#dish-locations)
 * [Dish Obstruction Maps](#dish-obstruction-maps)
-* [OneWeb](#oneweb)
 * [Monthly Snapshots](#monthly-snapshots)
    * [Decompress Guide](#decompress-guide)
    * [RAW dataset](#raw-dataset)
    * [Processed CSV dataset](#processed-csv-dataset)
       * [IRTT](#irtt)
       * [Ping](#ping)
-* [LICENSE](#license)
+* [License](#license)
+* [Acknowledgment](#acknowledgment)
 
 For ***inside-out*** measurements, the datasets are collected with multiple dishes located in the following regions.
 
@@ -38,7 +40,6 @@ For ***inside-out*** measurements, the datasets are collected with multiple dish
 | dallas            |  Oxford, MS, USA       | rev3_proto2         | Dallas                 | Inactive Standard     |
 | louvain           |  Louvain, Belgium      | rev3_proto2         | Frankfurt / London [4] | Standard              |
 | seychelles [3]    |  Seychelles            | rev3_proto2         | Lagos / Frankfurt [2]  | Mobile, Roam          |
-| kanazawa          |  Kanazawa, Japan       | rev3_proto2         | Tokyo                  | Mobile, Roam          |
 
 Ref:
 
@@ -66,13 +67,9 @@ Ref:
 | ![](./figures/alaska.png)            | ![](./figures/ottawa.png)            | ![](./figures/iowa.png)              |
 | **denver**                           | **dallas**                           | **louvain**                          |                                   
 | ![](./figures/denver.png)            | ![](./figures/dallas.png)            | ![](./figures/louvain.png)           |
-| **seychelles**                       | **kanazawa**                         |                                      |
-| ![](./figures/seychelles.png)        | ![](./figures/kanazawa.png)          |                                      |
+| **seychelles**                       |                                      |                                      |
+| ![](./figures/seychelles.png)        |                                      |                                      |
   
-## OneWeb
-
-We collected a few OneWeb traces from dishes located in Alaska, US. See [OneWeb](./oneweb/README.md) for more details.
-
 ## Monthly Snapshots
 
 The dataset is split into monthly snapshots. Each can be retrieved from Zenodo using the links below.
@@ -561,3 +558,7 @@ timestamp,rtt
 This repository is licensed under [GPL-3.0](./LICENSE).
 
 The dataset files on Zenodo are released under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+
+## Acknowledgment
+
+This work is not possible without our alumni and their students who hosted our Starlink dishes, and other Starlink users who allowed us to access their dishes remotely.
