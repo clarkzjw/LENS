@@ -553,7 +553,7 @@ timestamp,rtt
 
 </details>
 
-## LICENSE
+## License
 
 This repository is licensed under [GPL-3.0](./LICENSE).
 
