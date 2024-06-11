@@ -1,10 +1,14 @@
 # LENS: A LEO Satellite Network Measurement Dataset
 
-This repository contains the dataset for the paper ***LENS: A LEO Satellite Network Measurement Dataset*** published in ACM MMSys'24 Open-source Software and Dataset (ODS) track.
+This repository contains the dataset for the paper ***[LENS: A LEO Satellite Network Measurement Dataset](https://dl.acm.org/doi/10.1145/3625468.3652170)*** published in ACM Multimedia Systems Conference (MMSys'24) Open-source Software and Dataset (ODS) track.
 
-[![](https://img.shields.io/badge/MMSys'24ODS-Paper-blue)](https://dl.acm.org/doi/10.1145/3625468.3652170) [![](https://img.shields.io/badge/MMSys'24ODS-Poster-blue)](https://pan.uvic.ca/~clarkzjw/static/LENS-MMSys24-Poster.pdf) [![](https://img.shields.io/badge/MMSys'24-Paper-green)](https://github.com/clarkzjw/mmsys24-starlink-livestreaming)
+[![](https://img.shields.io/badge/MMSys'24ODS-Paper-blue)](https://dl.acm.org/doi/10.1145/3625468.3652170) [![](https://img.shields.io/badge/MMSys'24ODS-Poster-blue)](https://pan.uvic.ca/~clarkzjw/static/LENS-MMSys24-Poster.pdf)
 
 The original dataset snapshot for the published paper can be found at commit [c084c11](https://github.com/clarkzjw/LENS/tree/c084c1121a64470d4b14f9e060eb79ffbfe4e059).
+
+You can also check out our MMSys'24 paper ***[Low-Latency Live Video Streaming over a Low-Earth-Orbit Satellite Network with DASH](https://dl.acm.org/doi/10.1145/3625468.3647616)*** that utilizes this dataset for low-latency live video streaming over Starlink.
+
+[![](https://img.shields.io/badge/MMSys'24-Paper-green)](https://dl.acm.org/doi/10.1145/3625468.3647616) [![](https://img.shields.io/badge/MMSys'24-Implementation-pink)](https://github.com/clarkzjw/mmsys24-starlink-livestreaming)
 
 Table of Contents
 =================
