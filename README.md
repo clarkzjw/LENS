@@ -18,6 +18,7 @@ Table of Contents
       * [IRTT](#irtt)
       * [Ping](#ping)
 * [License](#license)
+* [Citation](#citation)
 * [Acknowledgment](#acknowledgment)
 
 For ***inside-out*** measurements, the datasets are collected with multiple dishes located in the following regions.
@@ -558,6 +559,29 @@ timestamp,rtt
 This repository is licensed under [GPL-3.0](./LICENSE).
 
 The dataset files on Zenodo are released under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+
+# Citation
+
+If you use this dataset in your research, please cite the following paper:
+
+```
+@inproceedings{10.1145/3625468.3652170,
+author = {Zhao, Jinwei and Pan, Jianping},
+title = {LENS: A LEO Satellite Network Measurement Dataset},
+year = {2024},
+isbn = {9798400704123},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3625468.3652170},
+doi = {10.1145/3625468.3652170},
+booktitle = {Proceedings of the 15th ACM Multimedia Systems Conference},
+pages = {278–284},
+numpages = {7},
+keywords = {Dataset, Inter-Satellite Links, LEO, Latency, Network Measurement},
+location = {<conf-loc>, <city>Bari</city>, <country>Italy</country>, </conf-loc>},
+series = {MMSys '24}
+}
+```
 
 ## Acknowledgment
 
