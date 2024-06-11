@@ -18,6 +18,7 @@ Table of Contents
       * [IRTT](#irtt)
       * [Ping](#ping)
 * [License](#license)
+* [Citation](#citation)
 * [Acknowledgment](#acknowledgment)
 
 For ***inside-out*** measurements, the datasets are collected with multiple dishes located in the following regions.
@@ -77,9 +78,9 @@ The dataset is split into monthly snapshots. Each can be retrieved from Zenodo u
 | Monthly Snapshots | Type | Link                                                                                     | Compressed Size | Decompressed Size |
 |-------------------|------|------------------------------------------------------------------------------------------|-----------------|-------------------|
 | 2024-05           | RAW  | [Part1: LENS-2024-05.tar.zst.aa](https://zenodo.org/records/11537639)<br>[Part2: LENS-2024-05.tar.zst.ab](https://zenodo.org/records/11538900)<br>[Part3: LENS-2024-05.tar.zst.ac](https://zenodo.org/records/11540281)  | 99GB | 1.2TB |
-| 2024-05           | CSV  | TBA | | |
-| 2024-04           | RAW  | [Part1: LENS-2024-04.tar.zst.aa](https://zenodo.org/records/11540826)<br>[Part2: LENS-2024-04.tar.zst.ab](https://zenodo.org/records/11541705)<br>[Part3: LENS-2024-04.tar.zst.ac](https://zenodo.org/records/11542711)<br>[Part4: LENS-2024-04.tar.zst.ad](https://zenodo.org/records/11543385) | 119GB | 1.4TB |
-| 2024-04           | CSV  | TBA | | |
+| 2024-05           | CSV  | [LENS-2024-05-CSV.tar.zst.aa](https://zenodo.org/records/11552317) | 32GB | 111GB |
+| 2024-04           | RAW  | [Part1: LENS-2024-04.tar.zst.aa](https://zenodo.org/records/11540826)<br>[Part2: LENS-2024-04.tar.zst.ab](https://zenodo.org/records/11541705)<br>[Part3: LENS-2024-04.tar.zst.ac](https://zenodo.org/records/11542711)<br>[Part4: LENS-2024-04.tar.zst.ad](https://zenodo.org/records/11543385) | 119GB | 1.4TB | 
+| 2024-04           | CSV  | [LENS-2024-05-CSV.tar.zst.aa](https://zenodo.org/records/11552333) | 38GB | 131GB |
 | 2024-03           | RAW  | TBA | | |
 | 2024-03           | CSV  | TBA | | |
 | 2024-02           | RAW  | TBA | | |
@@ -558,6 +559,29 @@ timestamp,rtt
 This repository is licensed under [GPL-3.0](./LICENSE).
 
 The dataset files on Zenodo are released under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+
+# Citation
+
+If you use this dataset in your research, please cite the following paper:
+
+```
+@inproceedings{10.1145/3625468.3652170,
+author = {Zhao, Jinwei and Pan, Jianping},
+title = {LENS: A LEO Satellite Network Measurement Dataset},
+year = {2024},
+isbn = {9798400704123},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3625468.3652170},
+doi = {10.1145/3625468.3652170},
+booktitle = {Proceedings of the 15th ACM Multimedia Systems Conference},
+pages = {278–284},
+numpages = {7},
+keywords = {Dataset, Inter-Satellite Links, LEO, Latency, Network Measurement},
+location = {<conf-loc>, <city>Bari</city>, <country>Italy</country>, </conf-loc>},
+series = {MMSys '24}
+}
+```
 
 ## Acknowledgment
 

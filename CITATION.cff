@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this dataset in your research, please cite the following paper."
+type: dataset
+authors:
+- family-names: "Zhao"
+  given-names: "Jinwei"
+  orcid: "https://orcid.org/0000-0002-1619-2567"
+- family-names: "Pan"
+  given-names: "Jianping"
+  orcid: "https://orcid.org/0000-0003-4893-6847"
+title: "LENS: A LEO Satellite Network Measurement Dataset"
+date-released: 2024-02-04
+url: "https://github.com/clarkzjw/LENS"
+preferred-citation:
+  type: conference-paper
+  authors:
+  - family-names: "Zhao"
+    given-names: "Jinwei"
+    orcid: "https://orcid.org/0000-0002-1619-2567"
+  - family-names: "Pan"
+    given-names: "Jianping"
+    orcid: "https://orcid.org/0000-0003-4893-6847"
+  doi: "10.1145/3625468.3652170"
+  start: 278
+  end: 284
+  title: "LENS: A LEO Satellite Network Measurement Dataset"
+  year: 2024
