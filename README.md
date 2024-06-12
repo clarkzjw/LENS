@@ -582,7 +582,7 @@ booktitle = {Proceedings of the 15th ACM Multimedia Systems Conference},
 pages = {278–284},
 numpages = {7},
 keywords = {Dataset, Inter-Satellite Links, LEO, Latency, Network Measurement},
-location = {<conf-loc>, <city>Bari</city>, <country>Italy</country>, </conf-loc>},
+location = {Bari, Italy},
 series = {MMSys '24}
 }
 ```
