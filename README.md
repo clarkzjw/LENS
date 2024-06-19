@@ -84,7 +84,7 @@ The dataset is split into monthly snapshots. Each can be retrieved from Zenodo u
 | 2024-05           | RAW  | [Part1: LENS-2024-05.tar.zst.aa](https://zenodo.org/records/11537639)<br>[Part2: LENS-2024-05.tar.zst.ab](https://zenodo.org/records/11538900)<br>[Part3: LENS-2024-05.tar.zst.ac](https://zenodo.org/records/11540281)  | 99GB | 1.2TB |
 | 2024-05           | CSV  | [LENS-2024-05-CSV.tar.zst.aa](https://zenodo.org/records/11552317) | 32GB | 111GB |
 | 2024-04           | RAW  | [Part1: LENS-2024-04.tar.zst.aa](https://zenodo.org/records/11540826)<br>[Part2: LENS-2024-04.tar.zst.ab](https://zenodo.org/records/11541705)<br>[Part3: LENS-2024-04.tar.zst.ac](https://zenodo.org/records/11542711)<br>[Part4: LENS-2024-04.tar.zst.ad](https://zenodo.org/records/11543385) | 119GB | 1.4TB | 
-| 2024-04           | CSV  | [LENS-2024-05-CSV.tar.zst.aa](https://zenodo.org/records/11552333) | 38GB | 131GB |
+| 2024-04           | CSV  | [LENS-2024-04-CSV.tar.zst.aa](https://zenodo.org/records/11552333) | 38GB | 131GB |
 | 2024-03           | RAW  | TBA | | |
 | 2024-03           | CSV  | TBA | | |
 | 2024-02           | RAW  | TBA | | |
