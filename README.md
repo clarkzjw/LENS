@@ -30,22 +30,32 @@ For ***inside-out*** measurements, the datasets are collected with multiple dish
 
 ## Dish Locations
 
-| ID                |  Location              | Dish Generation     | Point-of-Presence      | Service Tier          |
-| ----------------- | ---------------------- | ------------------- | ---------------------- | --------------------- |
-| victoria_active_1 |  Victoria, BC, Canada  | rev3_proto2         | Seattle                | Standard              |
-| victoria_active_2 |  Victoria, BC, Canada  | rev3_proto2         | Seattle                | Mobile                |
-| victoria_inactive |  Victoria, BC, Canada  | rev3_proto2         | Seattle                | Inactive Mobile, Roam |
-| vancouver         |  Vancouver, BC, Canada | rev2_proto3         | Seattle                | Standard [1]          |
-| seattle           |  Seattle, WA, USA      | rev3_proto2         | Seattle                | Standard              |
-| seattle_hp        |  Seattle, WA, USA      | hp1_proto1          | Seattle                | Priority              |
-| alaska            |  Anchorage, AK, USA    | rev3_proto2         | Seattle                | Mobile                |
-| calgary           |  Calgary, AB, Canada   | rev3_proto2         | Seattle                | Inactive Standard     |
-| ottawa            |  Ottawa, ON, Canada    | rev3_proto2         | New York               | Standard [5]          |
-| iowa              |  Iowa City, IA, USA    | rev1_pre_production | Chicago                | Standard              |
-| denver            |  Denver, CO, USA       | rev3_proto2         | Denver                 | Mobile, Roam [6]      |
-| dallas            |  Oxford, MS, USA       | rev3_proto2         | Dallas                 | Inactive Standard     |
-| louvain           |  Louvain, Belgium      | rev3_proto2         | Frankfurt / London [4] | Standard              |
-| seychelles [3]    |  Seychelles            | rev3_proto2         | Lagos / Frankfurt [2]  | Mobile, Roam          |
+<details>
+  <summary>Map of dish locations</summary>
+
+![](./figures/map.png)
+
+</details>
+
+
+| ID                    |  Location              | Dish Generation     | Point-of-Presence      | Service Tier          |
+| --------------------- | ---------------------- | ------------------- | ---------------------- | --------------------- |
+| victoria_active_1 [1] |  Victoria, BC, Canada  | rev3_proto2         | Seattle                | Standard              |
+| victoria_active_2     |  Victoria, BC, Canada  | rev3_proto2         | Seattle                | Mobile                |
+| victoria_inactive     |  Victoria, BC, Canada  | rev3_proto2         | Seattle                | Inactive Mobile, Roam |
+| vancouver             |  Vancouver, BC, Canada | rev2_proto3         | Seattle                | Standard [2]          |
+| seattle               |  Seattle, WA, USA      | rev3_proto2         | Seattle                | Standard              |
+| seattle_hp            |  Seattle, WA, USA      | hp1_proto1          | Seattle                | Priority              |
+| alaska                |  Anchorage, AK, USA    | rev3_proto2         | Seattle                | Mobile                |
+| calgary               |  Calgary, AB, Canada   | rev3_proto2         | Seattle                | Inactive Standard     |
+| ottawa                |  Ottawa, ON, Canada    | rev3_proto2         | New York               | Standard [6]          |
+| iowa                  |  Iowa City, IA, USA    | rev1_pre_production | Chicago                | Standard              |
+| denver                |  Denver, CO, USA       | rev3_proto2         | Denver                 | Mobile, Roam [7]      |
+| dallas                |  Oxford, MS, USA       | rev3_proto2         | Dallas                 | Inactive Standard     |
+| louvain               |  Louvain, Belgium      | rev3_proto2         | Frankfurt / London [5] | Standard              |
+| seychelles [4]        |  Seychelles            | rev3_proto2         | Lagos / Frankfurt [3]  | Mobile, Roam          |
+| kanazawa              |  Kanazawa, Japan       | rev3_proto2         | Tokyo                  | Mobile                |
+| brisbane              |  Brisbane, Australia   | rev3_proto2         | Sydney                 | Mobile                |
 
 Ref:
 
@@ -55,12 +65,13 @@ Ref:
 
 **Note**:
 
-1. The subscription plan associated with the *vancouver* dish was paused between 2023/12/29 and 2024/01/09, during which ***inactive*** measurements was conducted.
-2. The PoP associated with the *seychelles* dish was changed from Lagos to Frankfurt on 2023/12/08.
-3. The Starlink subscription at this installation has been canceled since March 2024, see [202403](./files/202403/README.md#seychelles) for more details.
-4. The PoP associated with the *louvain* dish was changed from Frankfurt to London.
-5. The Starlink subscription at this installation has been paused since March 2024, see [202403](./files/202403/README.md#ottawa) for more details.
-6. The Starlink subscription at this installation has been paused since March 2024, see [202403](./files/202403/README.md#denver) for more details.
+1. `victoria_active_1` is also referred to as `victoria` in the dataset snapshots.
+2. The subscription plan associated with the *vancouver* dish was paused between 2023/12/29 and 2024/01/09, during which ***inactive*** measurements was conducted.
+3. The PoP associated with the *seychelles* dish was changed from Lagos to Frankfurt on 2023/12/08.
+4. The Starlink subscription at this installation has been canceled since March 2024, see [202403](./files/202403/README.md#seychelles) for more details.
+5. The PoP associated with the *louvain* dish was changed from Frankfurt to London.
+6. The Starlink subscription at this installation has been paused since March 2024, see [202403](./files/202403/README.md#ottawa) for more details.
+7. The Starlink subscription at this installation has been paused since March 2024, see [202403](./files/202403/README.md#denver) for more details.
 
 ## Dish Obstruction Maps
 
@@ -73,8 +84,8 @@ Ref:
 | ![](./figures/alaska.png)            | ![](./figures/ottawa.png)            | ![](./figures/iowa.png)              |
 | **denver**                           | **dallas**                           | **louvain**                          |                                   
 | ![](./figures/denver.png)            | ![](./figures/dallas.png)            | ![](./figures/louvain.png)           |
-| **seychelles**                       | **kanazawa**                         |                                      |
-| ![](./figures/seychelles.png)        | ![](./figures/kanazawa.png)          |                                      |
+| **seychelles**                       | **kanazawa**                         | **brisbane**                         |
+| ![](./figures/seychelles.png)        | ![](./figures/kanazawa.png)          | ![](./figures/brisbane.png)          |
   
 ## OneWeb
 
