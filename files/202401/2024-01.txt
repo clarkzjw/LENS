@@ -1,5 +1,4 @@
 .
-├── 2024-01.txt
 ├── inside-out
 │   ├── active
 │   │   ├── alaska

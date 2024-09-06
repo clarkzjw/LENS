@@ -14,7 +14,6 @@ Table of Contents
 =================
 
 * [Dish Locations](#dish-locations)
-* [Dish Obstruction Maps](#dish-obstruction-maps)
 * [Monthly Snapshots](#monthly-snapshots)
    * [Decompress Guide](#decompress-guide)
    * [RAW dataset](#raw-dataset)
@@ -29,22 +28,54 @@ For ***inside-out*** measurements, the datasets are collected with multiple dish
 
 ## Dish Locations
 
-| ID                |  Location              | Dish Generation     | Point-of-Presence      | Service Tier          |
-| ----------------- | ---------------------- | ------------------- | ---------------------- | --------------------- |
-| victoria_active_1 |  Victoria, BC, Canada  | rev3_proto2         | Seattle                | Standard              |
-| victoria_active_2 |  Victoria, BC, Canada  | rev3_proto2         | Seattle                | Mobile                |
-| victoria_inactive |  Victoria, BC, Canada  | rev3_proto2         | Seattle                | Inactive Mobile, Roam |
-| vancouver         |  Vancouver, BC, Canada | rev2_proto3         | Seattle                | Standard [1]          |
-| seattle           |  Seattle, WA, USA      | rev3_proto2         | Seattle                | Standard              |
-| seattle_hp        |  Seattle, WA, USA      | hp1_proto1          | Seattle                | Priority              |
-| alaska            |  Anchorage, AK, USA    | rev3_proto2         | Seattle                | Mobile                |
-| calgary           |  Calgary, AB, Canada   | rev3_proto2         | Seattle                | Inactive Standard     |
-| ottawa            |  Ottawa, ON, Canada    | rev3_proto2         | New York               | Standard [5]          |
-| iowa              |  Iowa City, IA, USA    | rev1_pre_production | Chicago                | Standard              |
-| denver            |  Denver, CO, USA       | rev3_proto2         | Denver                 | Mobile, Roam [6]      |
-| dallas            |  Oxford, MS, USA       | rev3_proto2         | Dallas                 | Inactive Standard     |
-| louvain           |  Louvain, Belgium      | rev3_proto2         | Frankfurt / London [4] | Standard              |
-| seychelles [3]    |  Seychelles            | rev3_proto2         | Lagos / Frankfurt [2]  | Mobile, Roam          |
+<details>
+  <summary>Map of dish locations</summary>
+
+[![](./figures/map.png)](https://www.google.com/maps/d/edit?mid=1N7cvF39MFS7n_5lawJ5JqFzZWVqWKMc&usp=sharing)
+
+</details>
+
+| ID                    |  Location                | Dish Generation     | Point-of-Presence      | Service Tier          | Obstruction Map                      |
+| --------------------- | ------------------------ | ------------------- | ---------------------- | --------------------- | ------------------------------------ |
+| Canada                |                          |                     |                        |                       |                                      |
+| victoria_active_1 [1] |  Victoria, BC, Canada    | rev3_proto2         | Seattle                | Standard              | ![](./figures/victoria_active_1.png) |
+| victoria_active_2     |  Victoria, BC, Canada    | rev3_proto2         | Seattle                | Mobile                | ![](./figures/victoria_active_2.png) |
+| victoria_inactive     |  Victoria, BC, Canada    | rev3_proto2         | Seattle                | Inactive Mobile, Roam | ![](./figures/victoria_inactive.png) |
+| vancouver             |  Vancouver, BC, Canada   | rev2_proto3         | Seattle                | Standard [2]          | ![](./figures/vancouver.png)         |
+| calgary               |  Calgary, AB, Canada     | rev3_proto2         | Seattle                | Inactive Standard     | ![](./figures/calgary.png)           |
+| ottawa                |  Ottawa, ON, Canada      | rev3_proto2         | New York               | Standard [6]          | ![](./figures/ottawa.png)            |
+| ulukhaktok            |  Ulukhaktok, NT, Canada  | rev3_proto2         | Seattle                | Standard              | ![](./figures/ulukhaktok.png)        |
+| United States         |                          |                     |                        |                       |                                      |
+| seattle               |  Seattle, WA, USA        | rev3_proto2         | Seattle                | Standard              | ![](./figures/seattle.png)           |
+| seattle_hp            |  Seattle, WA, USA        | hp1_proto1          | Seattle                | Priority              | ![](./figures/seattle_hp.png)        |
+| alaska                |  Anchorage, AK, USA      | rev3_proto2         | Seattle                | Mobile                | ![](./figures/alaska.png)            |
+| iowa                  |  Iowa City, IA, USA      | rev1_pre_production | Chicago                | Standard              | ![](./figures/iowa.png)              |
+| denver                |  Denver, CO, USA         | rev3_proto2         | Denver                 | Mobile, Roam [7]      | ![](./figures/denver.png)            |
+| dallas                |  Oxford, MS, USA         | rev3_proto2         | Dallas                 | Inactive Standard     | ![](./figures/dallas.png)            |
+| stanford              |  Stanford, CA, USA       | rev3_proto2         | San Jose               | Standard              | ![](./figures/stanford.png)          |
+| slc                   |  Salt Lake City, UT, USA | rev3_proto2         | Seattle                | Standard              | ![](./figures/slc.png)               |
+
+Europe:
+
+| ID                    |  Location              | Dish Generation     | Point-of-Presence      | Service Tier          | Obstruction Map                      |
+| --------------------- | ---------------------- | ------------------- | ---------------------- | --------------------- | ------------------------------------ |
+| louvain [8]           |  Louvain, Belgium      | rev3_proto2         | Frankfurt / London [5] | Standard              | ![](./figures/louvain.png)           |
+| bruhl                 |  Brühl, Germany        | rev4_prod2          | Frankfurt              | Standard              | ![](./figures/bruhl.png)             |
+
+Africa:
+| ID                    |  Location              | Dish Generation     | Point-of-Presence      | Service Tier          | Obstruction Map                      |
+| --------------------- | ---------------------- | ------------------- | ---------------------- | --------------------- | ------------------------------------ |
+| seychelles [4]        |  Seychelles            | rev3_proto2         | Lagos / Frankfurt [3]  | Mobile, Roam          | ![](./figures/seychelles.png)        |
+
+Asia:
+| ID                    |  Location              | Dish Generation     | Point-of-Presence      | Service Tier          | Obstruction Map                      |
+| --------------------- | ---------------------- | ------------------- | ---------------------- | --------------------- | ------------------------------------ |
+| kanazawa              |  Kanazawa, Japan       | rev3_proto2         | Tokyo                  | Mobile                | ![](./figures/kanazawa.png)          |
+
+Oceania:
+| ID                    |  Location              | Dish Generation     | Point-of-Presence      | Service Tier          | Obstruction Map                      |
+| --------------------- | ---------------------- | ------------------- | ---------------------- | --------------------- | ------------------------------------ |
+| brisbane              |  Brisbane, Australia   | rev3_proto2         | Sydney                 | Mobile                | ![](./figures/brisbane.png)          |
 
 Ref:
 
@@ -54,41 +85,28 @@ Ref:
 
 **Note**:
 
-1. The subscription plan associated with the *vancouver* dish was paused between 2023/12/29 and 2024/01/09, during which ***inactive*** measurements was conducted.
-2. The PoP associated with the *seychelles* dish was changed from Lagos to Frankfurt on 2023/12/08.
-3. The Starlink subscription at this installation has been canceled since March 2024, see [202403](./files/202403/README.md#seychelles) for more details.
-4. The PoP associated with the *louvain* dish was changed from Frankfurt to London.
-5. The Starlink subscription at this installation has been paused since March 2024, see [202403](./files/202403/README.md#ottawa) for more details.
-6. The Starlink subscription at this installation has been paused since March 2024, see [202403](./files/202403/README.md#denver) for more details.
+1. `victoria_active_1` is also referred to as `victoria` in the dataset snapshots.
+2. The subscription plan associated with the `vancouver` dish was paused between 2023/12/29 and 2024/01/09, during which ***inactive*** measurements was conducted.
+3. The PoP associated with the `seychelles` dish was changed from Lagos to Frankfurt on 2023/12/08.
+4. The Starlink subscription at this installation has been canceled since March 2024, see [202403](./files/202403/README.md#seychelles) for more details. Since 2024/08, there were some ***inactive*** measurements at this location.
+5. The PoP associated with the `louvain` dish was changed from Frankfurt to London, while the `louvain` dish is still referred to as `frankfurt` in the dataset snapshots.
+6. The Starlink subscription at this installation has been paused since March 2024, see [202403](./files/202403/README.md#ottawa) for more details. Since 2024/07, there are ***inactive*** measurements at this location.
+7. The Starlink subscription at this installation has been paused since March 2024, see [202403](./files/202403/README.md#denver) for more details. Since 2024/07, there are ***inactive*** measurements at this location.
 
-## Dish Obstruction Maps
-
-| **victoria_active_1**                | **victoria_active_2**                | **victoria_inactive**                |
-| ------------------------------------ | ------------------------------------ | ------------------------------------ | 
-| ![](./figures/victoria_active_1.png) | ![](./figures/victoria_active_2.png) | ![](./figures/victoria_inactive.png) |
-| **vancouver**                        | **seattle**                          | **seattle_hp**                       |
-| ![](./figures/vancouver.png)         | ![](./figures/seattle.png)           | ![](./figures/seattle_hp.png)        |
-| **alaska**                           | **ottawa**                           | **iowa**                             |
-| ![](./figures/alaska.png)            | ![](./figures/ottawa.png)            | ![](./figures/iowa.png)              |
-| **denver**                           | **dallas**                           | **louvain**                          |                                   
-| ![](./figures/denver.png)            | ![](./figures/dallas.png)            | ![](./figures/louvain.png)           |
-| **seychelles**                       |                                      |                                      |
-| ![](./figures/seychelles.png)        |                                      |                                      |
-  
 ## Monthly Snapshots
 
 The dataset is split into monthly snapshots. Each can be retrieved from Zenodo using the links below.
 
 | Monthly Snapshots | Type | Link                                                                                     | Compressed Size | Decompressed Size |
 |-------------------|------|------------------------------------------------------------------------------------------|-----------------|-------------------|
+| 2024-07           | RAW  | [Part1: LENS-2024-07.tar.zst.aa](https://zenodo.org/records/13353671)<br>[Part2: LENS-2024-07.tar.zst.ab](https://zenodo.org/records/13695744)<br>[Part3: LENS-2024-07.tar.zst.ac](https://zenodo.org/records/13695896)<br>[Part4: LENS-2024-07.tar.zst.ad](https://zenodo.org/records/13696027)  | 117.7GB | 1.4TB |
+| 2024-06           | RAW  | [Part1: LENS-2024-06.tar.zst.aa](https://zenodo.org/records/13713699)<br>[Part2: LENS-2024-06.tar.zst.ab](https://zenodo.org/records/13713707)<br>[Part3: LENS-2024-06.tar.zst.ac](https://zenodo.org/records/13713711)  | 92GB | 1.1TB |
 | 2024-05           | RAW  | [Part1: LENS-2024-05.tar.zst.aa](https://zenodo.org/records/11537639)<br>[Part2: LENS-2024-05.tar.zst.ab](https://zenodo.org/records/11538900)<br>[Part3: LENS-2024-05.tar.zst.ac](https://zenodo.org/records/11540281)  | 99GB | 1.2TB |
 | 2024-05           | CSV  | [LENS-2024-05-CSV.tar.zst.aa](https://zenodo.org/records/11552317) | 32GB | 111GB |
-| 2024-04           | RAW  | [Part1: LENS-2024-04.tar.zst.aa](https://zenodo.org/records/11540826)<br>[Part2: LENS-2024-04.tar.zst.ab](https://zenodo.org/records/11541705)<br>[Part3: LENS-2024-04.tar.zst.ac](https://zenodo.org/records/11542711)<br>[Part4: LENS-2024-04.tar.zst.ad](https://zenodo.org/records/11543385) | 119GB | 1.4TB | 
+| 2024-04           | RAW  | [Part1: LENS-2024-04.tar.zst.aa](https://zenodo.org/records/11540826)<br>[Part2: LENS-2024-04.tar.zst.ab](https://zenodo.org/records/11541705)<br>[Part3: LENS-2024-04.tar.zst.ac](https://zenodo.org/records/11542711)<br>[Part4: LENS-2024-04.tar.zst.ad](https://zenodo.org/records/11543385) | 119GB | 1.4TB |
 | 2024-04           | CSV  | [LENS-2024-04-CSV.tar.zst.aa](https://zenodo.org/records/11552333) | 38GB | 131GB |
 | 2024-03           | RAW  | TBA | | |
-| 2024-03           | CSV  | TBA | | |
 | 2024-02           | RAW  | TBA | | |
-| 2024-02           | CSV  | TBA | | |
 | 2024-01           | RAW  | [Part1: LENS-2024-01.tar.zst.aa](https://zenodo.org/records/10445958)<br>[Part2: LENS-2024-01.tar.zst.ab](https://zenodo.org/records/10612421)<br>[Part3: LENS-2024-01.tar.zst.ac](https://zenodo.org/records/10612606)<br>[Part4: LENS-2024-01.tar.zst.ad](https://zenodo.org/records/10612616)<br>[Part5: LENS-2024-01.tar.zst.ae](https://zenodo.org/records/10612618) | 174GB | 2.1TB |
 | 2024-01           | CSV  | [Part1: LENS-2024-01-CSV.tar.zst.aa](https://zenodo.org/records/10663130)<br>[Part2: LENS-2024-01-CSV.tar.zst.ab](https://zenodo.org/records/10663146)   | 50GB | 161GB  |
 | 2023-12           | RAW  | [Part1: LENS-2023-12.tar.zst.aa](https://zenodo.org/records/10608436)<br>[Part2: LENS-2023-12.tar.zst.ab](https://zenodo.org/records/10614217)<br>[Part3: LENS-2023-12.tar.zst.ac](https://zenodo.org/records/10614332)<br>[Part4: LENS-2023-12.tar.zst.ad](https://zenodo.org/records/10614389) | 135GB | 1.6TB |
@@ -105,7 +123,7 @@ e.g.,
 tar -I "zstd -T24 -8" -cvf - LENS-2024-01 | split --bytes=40GB - LENS-2024-01.tar.zst.
 ```
 
-To decompress, make sure [Zstd](https://github.com/facebook/zstd) is installed. Download all the splitted tar archives for the same month in the same folder, and decompress using the following command. Make sure you have enough disk space. 
+To decompress, make sure [Zstd](https://github.com/facebook/zstd) is installed. Download all the splitted tar archives for the same month in the same folder, and decompress using the following command. Make sure you have enough disk space.
 
 e.g.,
 ```bash
@@ -114,11 +132,11 @@ cat LENS-2024-01.tar.zst.* | tar --zstd -xf -
 
 ### RAW dataset
 
-`RAW` dataset contains IRTT metrics in `.json` formats and ping metrics in `.txt` formats. Examples of both files are shown below. 
+`RAW` dataset contains IRTT metrics in `.json` formats and ping metrics in `.txt` formats. Examples of both files are shown below.
 
 <details>
   <summary>IRTT Example</summary>
-  
+
   ```json
 {
     "version": {
@@ -493,10 +511,11 @@ cat LENS-2024-01.tar.zst.* | tar --zstd -xf -
 
 Also see [IRTT-CLIENT (1)](https://htmlpreview.github.io/?https://github.com/heistp/irtt/blob/master/doc/irtt-client.html) for details.
 
+Note that the One-Way-Delay (OWD) calculation is affected by the clock synchronization between the client and server. We set up NTP on both the Starlink client and the server with NTP pool servers. However, we can only provide best-effort attempts and some OWD values might not be accurate and may contain negative values.
 
 <details>
   <summary>Ping Example</summary>
-  
+
   ```
 [1700182800.410606] 64 bytes from 2605:59c8:1000:962f::1: icmp_seq=1 ttl=63 time=60.6 ms
 [1700182800.421290] 64 bytes from 2605:59c8:1000:962f::1: icmp_seq=2 ttl=63 time=56.9 ms
@@ -516,7 +535,7 @@ For IRTT metrics, an example of the processed `*.csv` is shown below.
 
 <details>
   <summary>IRTT CSV Example</summary>
-  
+
   ```csv
 timestamp,rtt,uplink,downlink
 1705744800616897349,0,0,-1
@@ -531,9 +550,9 @@ timestamp,rtt,uplink,downlink
   ```
 </details>
 
-Note, for `rtt`, `uplink`, `downlink`, a value of `-1` represents packet loss. 
+Note, for `rtt`, `uplink`, `downlink`, a value of `-1` represents packet loss.
 
-Per [IRTT documentation](https://htmlpreview.github.io/?https://github.com/heistp/irtt/blob/master/doc/irtt-client.html), 
+Per [IRTT documentation](https://htmlpreview.github.io/?https://github.com/heistp/irtt/blob/master/doc/irtt-client.html),
 
 > *lost* the lost status of the packet, which can be one of false, true, true_down or true_up. The true_down and true_up values are only possible if the ReceivedStats parameter includes ReceivedStatsWindow (irtt client --stats flag). Even then, if it could not be determined whether the packet was lost upstream or downstream, the value true is used.
 
@@ -545,7 +564,7 @@ For Ping metrics, an example of the processed `*.csv` is shown below.
 
 <details>
   <summary>Ping CSV Example</summary>
-  
+
   ```csv
 timestamp,rtt
 1705744800.533641,91.8
@@ -589,4 +608,4 @@ series = {MMSys '24}
 
 ## Acknowledgment
 
-This work is not possible without our alumni and their students who hosted our Starlink dishes, and other Starlink users who allowed us to access their dishes remotely.
+This work is not possible without our alumni and their students who hosted our Starlink dishes, and other researchers and Starlink users on [/r/Starlink](https://www.reddit.com/r/Starlink/) and [/r/StarlinkEngineering](https://www.reddit.com/r/StarlinkEngineering/) who generously allowed us to access their dishes remotely.
