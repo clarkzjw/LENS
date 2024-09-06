@@ -63,6 +63,7 @@ Europe:
 | ID                    |  Location              | Dish Generation     | Point-of-Presence      | Service Tier          | Obstruction Map                      |
 | --------------------- | ---------------------- | ------------------- | ---------------------- | --------------------- | ------------------------------------ |
 | louvain               |  Louvain, Belgium      | rev3_proto2         | Frankfurt / London [5] | Standard              | ![](./figures/louvain.png)           |
+| bruhl                 |  Brühl, Germany        | rev4_prod2          | Frankfurt              | Standard              | ![](./figures/bruhl.png)             |
 
 Africa:
 | ID                    |  Location              | Dish Generation     | Point-of-Presence      | Service Tier          | Obstruction Map                      |
