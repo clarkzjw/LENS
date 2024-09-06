@@ -15,7 +15,6 @@ Table of Contents
 
 * [Dish Locations](#dish-locations)
 * [Dish Obstruction Maps](#dish-obstruction-maps)
-* [OneWeb](#oneweb)
 * [Monthly Snapshots](#monthly-snapshots)
    * [Decompress Guide](#decompress-guide)
    * [RAW dataset](#raw-dataset)
@@ -33,7 +32,7 @@ For ***inside-out*** measurements, the datasets are collected with multiple dish
 <details>
   <summary>Map of dish locations</summary>
 
-![](./figures/map.png)
+[![](./figures/map.png)](https://www.google.com/maps/d/edit?mid=1N7cvF39MFS7n_5lawJ5JqFzZWVqWKMc&usp=sharing)
 
 </details>
 
@@ -62,7 +61,7 @@ Europe:
 
 | ID                    |  Location              | Dish Generation     | Point-of-Presence      | Service Tier          | Obstruction Map                      |
 | --------------------- | ---------------------- | ------------------- | ---------------------- | --------------------- | ------------------------------------ |
-| louvain               |  Louvain, Belgium      | rev3_proto2         | Frankfurt / London [5] | Standard              | ![](./figures/louvain.png)           |
+| louvain [8]           |  Louvain, Belgium      | rev3_proto2         | Frankfurt / London [5] | Standard              | ![](./figures/louvain.png)           |
 | bruhl                 |  Brühl, Germany        | rev4_prod2          | Frankfurt              | Standard              | ![](./figures/bruhl.png)             |
 
 Africa:
@@ -89,12 +88,12 @@ Ref:
 **Note**:
 
 1. `victoria_active_1` is also referred to as `victoria` in the dataset snapshots.
-2. The subscription plan associated with the *vancouver* dish was paused between 2023/12/29 and 2024/01/09, during which ***inactive*** measurements was conducted.
-3. The PoP associated with the *seychelles* dish was changed from Lagos to Frankfurt on 2023/12/08.
-4. The Starlink subscription at this installation has been canceled since March 2024, see [202403](./files/202403/README.md#seychelles) for more details.
-5. The PoP associated with the *louvain* dish was changed from Frankfurt to London.
-6. The Starlink subscription at this installation has been paused since March 2024, see [202403](./files/202403/README.md#ottawa) for more details.
-7. The Starlink subscription at this installation has been paused since March 2024, see [202403](./files/202403/README.md#denver) for more details.
+2. The subscription plan associated with the `vancouver` dish was paused between 2023/12/29 and 2024/01/09, during which ***inactive*** measurements was conducted.
+3. The PoP associated with the `seychelles` dish was changed from Lagos to Frankfurt on 2023/12/08.
+4. The Starlink subscription at this installation has been canceled since March 2024, see [202403](./files/202403/README.md#seychelles) for more details. Since 2024/08, there were some ***inactive*** measurements at this location.
+5. The PoP associated with the `louvain` dish was changed from Frankfurt to London, while the `louvain` dish is still referred to as `frankfurt` in the dataset snapshots.
+6. The Starlink subscription at this installation has been paused since March 2024, see [202403](./files/202403/README.md#ottawa) for more details. Since 2024/07, there are ***inactive*** measurements at this location.
+7. The Starlink subscription at this installation has been paused since March 2024, see [202403](./files/202403/README.md#denver) for more details. Since 2024/07, there are ***inactive*** measurements at this location.
 
 ## Monthly Snapshots
 
@@ -102,14 +101,14 @@ The dataset is split into monthly snapshots. Each can be retrieved from Zenodo u
 
 | Monthly Snapshots | Type | Link                                                                                     | Compressed Size | Decompressed Size |
 |-------------------|------|------------------------------------------------------------------------------------------|-----------------|-------------------|
+| 2024-07           | RAW  | [Part1: LENS-2024-07.tar.zst.aa](https://zenodo.org/records/13353671)<br>[Part2: LENS-2024-07.tar.zst.ab](https://zenodo.org/records/13695744)<br>[Part3: LENS-2024-07.tar.zst.ac](https://zenodo.org/records/13695896)<br>[Part4: LENS-2024-07.tar.zst.ad](https://zenodo.org/records/13696027)  | 117.7GB | 1.4TB |
+| 2024-06           | RAW  | [Part1: LENS-2024-06.tar.zst.aa](https://zenodo.org/records/13713699)<br>[Part2: LENS-2024-06.tar.zst.ab](https://zenodo.org/records/13713707)<br>[Part3: LENS-2024-06.tar.zst.ac](https://zenodo.org/records/13713711)  | 92GB | 1.1TB |
 | 2024-05           | RAW  | [Part1: LENS-2024-05.tar.zst.aa](https://zenodo.org/records/11537639)<br>[Part2: LENS-2024-05.tar.zst.ab](https://zenodo.org/records/11538900)<br>[Part3: LENS-2024-05.tar.zst.ac](https://zenodo.org/records/11540281)  | 99GB | 1.2TB |
 | 2024-05           | CSV  | [LENS-2024-05-CSV.tar.zst.aa](https://zenodo.org/records/11552317) | 32GB | 111GB |
 | 2024-04           | RAW  | [Part1: LENS-2024-04.tar.zst.aa](https://zenodo.org/records/11540826)<br>[Part2: LENS-2024-04.tar.zst.ab](https://zenodo.org/records/11541705)<br>[Part3: LENS-2024-04.tar.zst.ac](https://zenodo.org/records/11542711)<br>[Part4: LENS-2024-04.tar.zst.ad](https://zenodo.org/records/11543385) | 119GB | 1.4TB |
 | 2024-04           | CSV  | [LENS-2024-04-CSV.tar.zst.aa](https://zenodo.org/records/11552333) | 38GB | 131GB |
 | 2024-03           | RAW  | TBA | | |
-| 2024-03           | CSV  | TBA | | |
 | 2024-02           | RAW  | TBA | | |
-| 2024-02           | CSV  | TBA | | |
 | 2024-01           | RAW  | [Part1: LENS-2024-01.tar.zst.aa](https://zenodo.org/records/10445958)<br>[Part2: LENS-2024-01.tar.zst.ab](https://zenodo.org/records/10612421)<br>[Part3: LENS-2024-01.tar.zst.ac](https://zenodo.org/records/10612606)<br>[Part4: LENS-2024-01.tar.zst.ad](https://zenodo.org/records/10612616)<br>[Part5: LENS-2024-01.tar.zst.ae](https://zenodo.org/records/10612618) | 174GB | 2.1TB |
 | 2024-01           | CSV  | [Part1: LENS-2024-01-CSV.tar.zst.aa](https://zenodo.org/records/10663130)<br>[Part2: LENS-2024-01-CSV.tar.zst.ab](https://zenodo.org/records/10663146)   | 50GB | 161GB  |
 | 2023-12           | RAW  | [Part1: LENS-2023-12.tar.zst.aa](https://zenodo.org/records/10608436)<br>[Part2: LENS-2023-12.tar.zst.ab](https://zenodo.org/records/10614217)<br>[Part3: LENS-2023-12.tar.zst.ac](https://zenodo.org/records/10614332)<br>[Part4: LENS-2023-12.tar.zst.ad](https://zenodo.org/records/10614389) | 135GB | 1.6TB |
@@ -610,4 +609,4 @@ series = {MMSys '24}
 
 ## Acknowledgment
 
-This work is not possible without our alumni and their students who hosted our Starlink dishes, and other Starlink users who allowed us to access their dishes remotely.
+This work is not possible without our alumni and their students who hosted our Starlink dishes, and other researchers and Starlink users on [/r/Starlink](https://www.reddit.com/r/Starlink/) and [/r/StarlinkEngineering](https://www.reddit.com/r/StarlinkEngineering/) who generously allowed us to access their dishes remotely.
