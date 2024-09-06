@@ -14,7 +14,6 @@ Table of Contents
 =================
 
 * [Dish Locations](#dish-locations)
-* [Dish Obstruction Maps](#dish-obstruction-maps)
 * [Monthly Snapshots](#monthly-snapshots)
    * [Decompress Guide](#decompress-guide)
    * [RAW dataset](#raw-dataset)
@@ -35,7 +34,6 @@ For ***inside-out*** measurements, the datasets are collected with multiple dish
 [![](./figures/map.png)](https://www.google.com/maps/d/edit?mid=1N7cvF39MFS7n_5lawJ5JqFzZWVqWKMc&usp=sharing)
 
 </details>
-
 
 | ID                    |  Location                | Dish Generation     | Point-of-Presence      | Service Tier          | Obstruction Map                      |
 | --------------------- | ------------------------ | ------------------- | ---------------------- | --------------------- | ------------------------------------ |
@@ -513,6 +511,7 @@ cat LENS-2024-01.tar.zst.* | tar --zstd -xf -
 
 Also see [IRTT-CLIENT (1)](https://htmlpreview.github.io/?https://github.com/heistp/irtt/blob/master/doc/irtt-client.html) for details.
 
+Note that the One-Way-Delay (OWD) calculation is affected by the clock synchronization between the client and server. We set up NTP on both the Starlink client and the server with NTP pool servers. However, we can only provide best-effort attempts and some OWD values might not be accurate and may contain negative values.
 
 <details>
   <summary>Ping Example</summary>
