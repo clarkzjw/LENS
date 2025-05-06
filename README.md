@@ -99,8 +99,11 @@ The dataset is split into monthly snapshots. Each can be retrieved from Zenodo u
 
 | Monthly Snapshots | Type | Link                                                                                     | Compressed Size | Decompressed Size |
 |-------------------|------|------------------------------------------------------------------------------------------|-----------------|-------------------|
-| 2024-12           | RAW  | TBA                                                                                      |                 |                   |
-| 2024-11           | RAW  | TBA                                                                                      |                 |                   |
+| 2025-03           | RAW  | [LENS-2025-03.tar.zst.aa](https://zenodo.org/records/15331299)                           | 18GB            | 175GB             |
+| 2025-02           | RAW  | [LENS-2025-02.tar.zst.aa](https://zenodo.org/records/15331293)                           | 21GB            | 203GB             |
+| 2025-01           | RAW  | [LENS-2025-01.tar.zst.aa](https://zenodo.org/records/15331291)                           | 24GB            | 243GB             |
+| 2024-12           | RAW  | [LENS-2024-12.tar.zst.aa](https://zenodo.org/records/15331289)                           | 29GB            | 291GB             |
+| 2024-11           | RAW  | [LENS-2024-11.tar.zst.aa](https://zenodo.org/records/15331285)                           | 37GB            | 421GB             |
 | 2024-10           | RAW  | [Part1: LENS-2024-10.tar.zst.aa](https://zenodo.org/records/14625823)<br>[Part2: LENS-2024-10.tar.zst.ab](https://zenodo.org/records/14625829)                                                                                                             | 52GB            | 592GB             |
 | 2024-09           | RAW  | [Part1: LENS-2024-09.tar.zst.aa](https://zenodo.org/records/14625815)<br>[Part2: LENS-2024-09.tar.zst.ab](https://zenodo.org/records/14625819)                                                                                                             | 73GB            | 853GB             |
 | 2024-08           | RAW  | [Part1: LENS-2024-08.tar.zst.aa](https://zenodo.org/records/14625802)<br>[Part2: LENS-2024-08.tar.zst.ab](https://zenodo.org/records/14625808)<br>[Part3: LENS-2024-08.tar.zst.ac](https://zenodo.org/records/14625810)                                                         | 94GB            | 1.1TB             |
