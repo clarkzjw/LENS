@@ -1,5 +1,15 @@
 This directory contains the list of traces of each Starlink dish of each monthly snapshot.
 
+- [202503](./202503/README.md)
+- [202502](./202502/README.md)
+- [202501](./202501/README.md)
+- [202412](./202412/README.md)
+- [202411](./202411/README.md)
+- [202410](./202410/README.md)
+- [202409](./202409/README.md)
+- [202408](./202408/README.md)
+- [202407](./202407/README.md)
+- [202406](./202406/README.md)
 - [202405](./202405/README.md)
 - [202404](./202404/README.md)
 - [202403](./202403/README.md)
