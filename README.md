@@ -1,14 +1,10 @@
 # LENS: A LEO Satellite Network Measurement Dataset
 
-This repository contains the dataset for the paper ***[LENS: A LEO Satellite Network Measurement Dataset](https://dl.acm.org/doi/10.1145/3625468.3652170)*** published in ACM Multimedia Systems Conference (MMSys'24) Open-source Software and Dataset (ODS) track.
-
-[![](https://img.shields.io/badge/MMSys'24ODS-Paper-blue)](https://dl.acm.org/doi/10.1145/3625468.3652170) [![](https://img.shields.io/badge/MMSys'24ODS-Poster-blue)](https://pan.uvic.ca/~clarkzjw/static/LENS-MMSys24-Poster.pdf)
+This repository contains the dataset for the paper ***[LENS: A LEO Satellite Network Measurement Dataset](https://dl.acm.org/doi/10.1145/3625468.3652170)*** published in ACM Multimedia Systems Conference (MMSys'24) Open-Source Software and Dataset (ODS) track.
 
 The original dataset snapshot for the published paper can be found at commit [c084c11](https://github.com/clarkzjw/LENS/tree/c084c1121a64470d4b14f9e060eb79ffbfe4e059).
 
-You can also check out our MMSys'24 paper ***[Low-Latency Live Video Streaming over a Low-Earth-Orbit Satellite Network with DASH](https://dl.acm.org/doi/10.1145/3625468.3647616)*** that utilizes this dataset for low-latency live video streaming over Starlink.
-
-[![](https://img.shields.io/badge/MMSys'24-Paper-green)](https://dl.acm.org/doi/10.1145/3625468.3647616) [![](https://img.shields.io/badge/MMSys'24-Implementation-pink)](https://github.com/clarkzjw/mmsys24-starlink-livestreaming)
+[![](https://img.shields.io/badge/MMSys'24ODS-Paper-blue)](https://dl.acm.org/doi/10.1145/3625468.3652170) [![](https://img.shields.io/badge/MMSys'24ODS-Poster-blue)](https://pan.uvic.ca/~clarkzjw/static/LENS-MMSys24-Poster.pdf)
 
 Table of Contents
 =================
@@ -23,18 +19,12 @@ Table of Contents
 * [OneWeb](#oneweb)
 * [License](#license)
 * [Citation](#citation)
+    * [Cited by](#cited-by)
 * [Acknowledgment](#acknowledgment)
 
 For ***inside-out*** measurements, the datasets are collected with multiple dishes located in the following regions.
 
-## Dish Locations
-
-<details>
-  <summary>Map of dish locations</summary>
-
-[![](./figures/map.png)](https://www.google.com/maps/d/edit?mid=1N7cvF39MFS7n_5lawJ5JqFzZWVqWKMc&usp=sharing)
-
-</details>
+# Dish Locations
 
 | ID                    |  Location                | Dish Generation     | Point-of-Presence      | Service Tier          | Obstruction Map                      |
 | --------------------- | ------------------------ | ------------------- | ---------------------- | --------------------- | ------------------------------------ |
@@ -94,7 +84,7 @@ Ref:
 6. The Starlink subscription at this installation has been paused since March 2024, see [202403](./files/202403/README.md#ottawa) for more details. Since 2024/07, there are ***inactive*** measurements at this location.
 7. The Starlink subscription at this installation has been paused since March 2024, see [202403](./files/202403/README.md#denver) for more details. Since 2024/07, there are ***inactive*** measurements at this location.
 
-## Monthly Snapshots
+# Monthly Snapshots
 
 The dataset is split into monthly snapshots. Each can be retrieved from Zenodo using the links below.
 
@@ -123,7 +113,7 @@ The dataset is split into monthly snapshots. Each can be retrieved from Zenodo u
 | 2023-11           | RAW  | [Part1: LENS-2023-11.tar.zst.aa](https://zenodo.org/records/10608442)<br>[Part2: LENS-2023-11.tar.zst.ab](https://zenodo.org/records/10614491) | 72GB | 854GB             |
 | 2023-11           | CSV  | [LENS-2023-11-CSV.tar.zst.aa](https://zenodo.org/records/10663194) | 21GB      | 68GB   |
 
-### Decompress Guide
+## Decompress Guide
 
 Due to the file size limit on Zenodo, monthly snapshots are created in splitted tar archives using the following command.
 
@@ -139,7 +129,7 @@ e.g.,
 cat LENS-2024-01.tar.zst.* | tar --zstd -xf -
 ```
 
-### RAW dataset
+## RAW dataset
 
 `RAW` dataset contains IRTT metrics in `.json` formats and ping metrics in `.txt` formats. Examples of both files are shown below.
 
@@ -534,11 +524,11 @@ Note that the One-Way-Delay (OWD) calculation is affected by the clock synchroni
   ```
 </details>
 
-### Processed CSV dataset
+## Processed CSV dataset
 
 Processed CSV dataset only contains timestamps and necessary latency metrics.
 
-#### IRTT
+### IRTT
 
 For IRTT metrics, an example of the processed `*.csv` is shown below.
 
@@ -567,7 +557,7 @@ Per [IRTT documentation](https://htmlpreview.github.io/?https://github.com/heist
 
 When converting from `*.json` to `*.csv`, we assign `-1` to `rtt` and `0` to others, when the `lost` status is `true`; assign `-1` to `uplink` and `0` to others, when the `lost` status is `true_up`; assign `-1` to `downlink` and `0` to others, when the `lost` status is `true_down`;
 
-#### Ping
+### Ping
 
 For Ping metrics, an example of the processed `*.csv` is shown below.
 
@@ -586,11 +576,11 @@ timestamp,rtt
 
 </details>
 
-## OneWeb
+# OneWeb
 
 Please check [`oneweb`](./oneweb/) for the OneWeb dataset.
 
-## License
+# License
 
 This repository is licensed under [GPL-3.0](./LICENSE).
 
@@ -619,6 +609,46 @@ series = {MMSys '24}
 }
 ```
 
-## Acknowledgment
+## Cited by
+
+If you have used this dataset in your research, please let us know by opening an issue or sending us an email, and we will add your work to the list below.
+
+- Daniel Jang, Matteo Varvello, Aravindh Raman, Yasir Zaki. 2025. From GEO to LEO: First Look Into Starlink In-Flight Connectivity. https://danielja.ng/publications/first_look_starlink_aviation.pdf
+
+- Johan Garcia, Simon Sundberg, and Anna Brunstrom. 2025. A Detailed Characterization of Starlink One-way Delay. In Proceedings of the 2025 3rd Workshop on LEO Networking and Communication (LEO-NET '25). Association for Computing Machinery, New York, NY, USA, 43–49. doi: [10.1145/3748749.3749090](https://doi.org/10.1145/3748749.3749090).
+
+- Till Zimmermann, Eric Lanfer, Dominic Laniewski, Simon Brinkmann, and Nils Aschenbruck. 2025. Better Fill Up Your Pipe - Revisiting Starlink's Burst Characterization. In Proceedings of the 2025 3rd Workshop on LEO Networking and Communication (LEO-NET '25). Association for Computing Machinery, New York, NY, USA, 36–42. doi: [10.1145/3748749.3749089](https://doi.org/10.1145/3748749.3749089)
+
+- Revika Anand, Edward Austin, Charalampos Rotsos, Paul Smith, and Nicholas Race. 2025. MOSAIC: Piecing Together 5G and LEOs for NTN Integration Experimentation. In Proceedings of the 2025 3rd Workshop on LEO Networking and Communication (LEO-NET '25). Association for Computing Machinery, New York, NY, USA, 50–56. doi: [10.1145/3748749.3749091](https://doi.org/10.1145/3748749.3749091)
+
+- Chaganti, Vasanta and Berger, Arthur. 2025. A View from Above: Measuring Rural Internet Access Across a Diverse Corpus of Starlink Measurements (August 1, 2025). http://dx.doi.org/10.2139/ssrn.5400556
+
+- Bo Wu, Pengfei Zhou. 2025. Near-realtime Earth Observation Via Starlink LEO Satellite Constellation. https://arxiv.org/abs/2508.10338
+
+- L. Borgianni, D. Adami, M. Bosi, S. Giordano and C. Chafe. 2025. A Comprehensive Evaluation of Networked Music Performance using LEO Satellite Internet: The Starlink Use Case. In IEEE Transactions on Network and Service Management, doi: [10.1109/TNSM.2025.3589226](https://ieeexplore.ieee.org/document/11080326).
+
+- F. Kahmann et al. 2025. Nomadic 5G Network with Satellite Based Internet Connectivity for Agriculture. 2025 IEEE 21st International Conference on Factory Communication Systems (WFCS), Rostock, Germany, 2025, pp. 1-8, doi: [10.1109/WFCS63373.2025.11077650](https://ieeexplore.ieee.org/abstract/document/11077650).
+
+- Muhammad Asad Ullah, Antti Heikkinen, Mikko Uitto, Antti Anttonen, Konstantin Mikhaylov. 2025. Impact of Weather on Satellite Communication: Evaluating Starlink Resilience. https://arxiv.org/abs/2505.04772
+
+- Quanwei Zhang, Zhiming Huang, Jinwei Zhao, and Jianping Pan. 2025. A Congestion Control Test Suite for Real-Time Communication. In Proceedings of the 16th ACM Multimedia Systems Conference (MMSys '25). Association for Computing Machinery, New York, NY, USA, 270–276. doi: [10.1145/3712676.3718341](https://doi.org/10.1145/3712676.3718341)
+
+- Haozhi Li, Tariq Elahi. 2025. SaTor: Satellite Routing in Tor to Reduce Latency. https://arxiv.org/abs/2406.15055
+
+- D. Li, J. Zhao and J. Pan. 2025. FTRL-WRR: Learning-Based Two-Path Scheduler for LEO Networks. 2025 IEEE 22nd Consumer Communications & Networking Conference (CCNC), Las Vegas, NV, USA, 2025, pp. 1-6, doi: [10.1109/CCNC54725.2025.10976084](https://ieeexplore.ieee.org/abstract/document/10976084).
+
+- J. Fang and J. Zhang. 2024. Adaptive Congestion Control Strategies for LEO Satellite Networks. 2024 IEEE 24th International Conference on Communication Technology (ICCT), Chengdu, China, 2024, pp. 1055-1060, doi: [10.1109/ICCT62411.2024.10946525](https://ieeexplore.ieee.org/abstract/document/10946525/).
+
+- Ali Ahangarpour, Jinwei Zhao, and Jianping Pan. 2024. Trajectory-based Serving Satellite Identification with User Terminal's Field-of-View. In Proceedings of the 2nd International Workshop on LEO Networking and Communication (LEO-NET '24). Association for Computing Machinery, New York, NY, USA, 55–60. doi: [10.1145/3697253.3697266](https://doi.org/10.1145/3697253.3697266)
+
+- Victor Kamel, Jinwei Zhao, Daoping Li, and Jianping Pan. 2024. StarQUIC: Tuning Congestion Control Algorithms for QUIC over LEO Satellite Networks. In Proceedings of the 2nd International Workshop on LEO Networking and Communication (LEO-NET '24). Association for Computing Machinery, New York, NY, USA, 43–48. doi: [10.1145/3697253.3697271](https://doi.org/10.1145/3697253.3697271)
+
+- Liz Izhikevich, Reese Enghardt, Te-Yuan Huang, and Renata Teixeira. 2024. A Global Perspective on the Past, Present, and Future of Video Streaming over Starlink. Proc. ACM Meas. Anal. Comput. Syst. 8, 3, Article 30 (December 2024), 22 pages. doi:  [10.1145/3700412](https://doi.org/10.1145/3700412)
+
+- Jinwei Zhao and Jianping Pan. 2024. Low-Latency Live Video Streaming over a Low-Earth-Orbit Satellite Network with DASH. In Proceedings of the 15th ACM Multimedia Systems Conference (MMSys '24). Association for Computing Machinery, New York, NY, USA, 109–120. doi: [10.1145/3625468.3647616](https://doi.org/10.1145/3625468.3647616)
+
+
+
+# Acknowledgment
 
 This work is not possible without our alumni and their students who hosted our Starlink dishes, and other researchers and Starlink users on [/r/Starlink](https://www.reddit.com/r/Starlink/) and [/r/StarlinkEngineering](https://www.reddit.com/r/StarlinkEngineering/) who generously allowed us to access their dishes remotely.
