@@ -86,6 +86,14 @@ Ref:
 
 # Monthly Snapshots
 
+**Update (2025/11/16)**: Starting from November 2025, we have revamped the dataset collection and storage pipeline. The new dataset will also include relevant metrics from the Starlink dish gRPC interface.
+
+The release cycle will be more frequent, which includes weekly and monthly snapshots, as the pipeline will be automated. We will use the object storage sponsored by the [Digital Research Alliance of Canada](https://www.alliancecan.ca/) for future dataset hosting. The new dataset is expected to be available starting from around December 2025.
+
+Backlog monthly snapshots from April 2025 to November 2025 will be gradually uploaded to Zenodo.
+
+---
+
 The dataset is split into monthly snapshots. Each can be retrieved from Zenodo using the links below.
 
 | Monthly Snapshots | Type | Link                                                                                     | Compressed Size | Decompressed Size |
