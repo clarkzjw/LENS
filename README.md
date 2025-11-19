@@ -6,6 +6,18 @@ The original dataset snapshot for the published paper can be found at commit [c0
 
 [![](https://img.shields.io/badge/MMSys'24ODS-Paper-blue)](https://dl.acm.org/doi/10.1145/3625468.3652170) [![](https://img.shields.io/badge/MMSys'24ODS-Poster-blue)](https://pan.uvic.ca/~clarkzjw/static/LENS-MMSys24-Poster.pdf)
 
+**Update (2025/11/19)**: Starting from November 2025, we have revamped the dataset collection and storage pipeline. The new Starlink dataset is available at [https://lens-starlink.jinwei.me](https://lens-starlink.jinwei.me).
+
+The new dataset now includes relevant metrics from the Starlink dish gRPC interface.
+
+On the new dataset site, individual measurement archives will be uploaded upon completion. Weekly node snapshots will be uploaded at the beginning of the following week.
+
+The object storage is sponsored by the [Digital Research Alliance of Canada](https://www.alliancecan.ca/), as part of the [Coast-to-Coast-to-Coast LEO Testbed](https://oac.uvic.ca/cccleo) project.
+
+When you download dataset archives from the new site, it is served through Cloudflare CDN, and limited telemetry data will be collected for statistical purposes.
+
+Backlog monthly snapshots from April 2025 to November 2025 will be gradually uploaded to Zenodo and the links will still be updated here.
+
 Table of Contents
 =================
 
@@ -86,18 +98,11 @@ Ref:
 
 # Monthly Snapshots
 
-**Update (2025/11/16)**: Starting from November 2025, we have revamped the dataset collection and storage pipeline. The new dataset will also include relevant metrics from the Starlink dish gRPC interface.
-
-The release cycle will be more frequent, which includes weekly and monthly snapshots, as the pipeline will be automated. We will use the object storage sponsored by the [Digital Research Alliance of Canada](https://www.alliancecan.ca/) for future dataset hosting. The new dataset is expected to be available starting from around December 2025.
-
-Backlog monthly snapshots from April 2025 to November 2025 will be gradually uploaded to Zenodo.
-
----
-
 The dataset is split into monthly snapshots. Each can be retrieved from Zenodo using the links below.
 
 | Monthly Snapshots | Type | Link                                                                                     | Compressed Size | Decompressed Size |
 |-------------------|------|------------------------------------------------------------------------------------------|-----------------|-------------------|
+| 2025-11 and later |      | https://lens-starlink.jinwei.me                                                          |                 |                   |
 | 2025-03           | RAW  | [LENS-2025-03.tar.zst.aa](https://zenodo.org/records/15331299)                           | 18GB            | 175GB             |
 | 2025-02           | RAW  | [LENS-2025-02.tar.zst.aa](https://zenodo.org/records/15331293)                           | 21GB            | 203GB             |
 | 2025-01           | RAW  | [LENS-2025-01.tar.zst.aa](https://zenodo.org/records/15331291)                           | 24GB            | 243GB             |
