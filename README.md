@@ -6,6 +6,10 @@ The original dataset snapshot for the published paper can be found at commit [c0
 
 [![](https://img.shields.io/badge/MMSys'24ODS-Paper-blue)](https://dl.acm.org/doi/10.1145/3625468.3652170) [![](https://img.shields.io/badge/MMSys'24ODS-Poster-blue)](https://pan.uvic.ca/~clarkzjw/static/LENS-MMSys24-Poster.pdf)
 
+**Update (2026/06/24)**: Updated overview of the testbed nodes and more infomation on the testbed can be found at [https://oac.uvic.ca/cccleo](https://oac.uvic.ca/cccleo).
+
+[![](https://cccleo-grafana-image-proxy.jinwei.me/render?endpoint=FullDashboardWorld)](https://oac.uvic.ca/cccleo)
+
 **Update (2025/11/19)**: Starting from November 2025, we have revamped the dataset collection and storage pipeline. The new Starlink dataset is available at [https://lens-starlink.jinwei.me](https://lens-starlink.jinwei.me).
 
 The new dataset now includes relevant metrics from the Starlink dish gRPC interface.
